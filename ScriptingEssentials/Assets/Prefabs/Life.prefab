@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 5705734607217626240}
   - component: {fileID: 4502993040884182529}
   - component: {fileID: 3051548175490676514}
+  - component: {fileID: 5479844276909818289}
+  - component: {fileID: -5456604018132721242}
   m_Layer: 5
   m_Name: Life
   m_TagString: Untagged
@@ -76,3 +78,45 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5479844276909818289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9127570756400776394}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f8decc882bc4edab84a07416968cce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onEnableEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 0617a2a57239647bd930c0b79250ec9e, type: 2}
+        m_TargetAssemblyTypeName: GenericObjectsBase`1[[UnityEngine.Object, UnityEngine
+        m_MethodName: Add
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  canRun: 1
+  holdTime: 2
+--- !u!114 &-5456604018132721242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9127570756400776394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52f1040e3955a4e4bacc158a9bd6c007, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sendToListAction: {fileID: 11400000, guid: 7571e5d71db2a4ca0bad518c6dfb83bc, type: 2}

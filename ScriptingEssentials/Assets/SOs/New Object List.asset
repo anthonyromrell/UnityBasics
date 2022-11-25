@@ -12,3 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7adbea6964cfb413ba57594913829f38, type: 3}
   m_Name: New Object List
   m_EditorClassIdentifier: 
+  getFromAddAction: {fileID: 0}
+  objects:
+  - {fileID: 5627156354476819725, guid: 2d0634c7349a24ed8b369cdfc1f16502, type: 3}

@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9f69600619194773b1196df63f2b828, type: 3}
   m_Name: LifeInstancer
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
-  indexer: {fileID: 0}
+  prefab: {fileID: 9127570756400776394, guid: d83ea82e34ff64a3e8b61b2c2b5dbee3, type: 3}
+  indexer: {fileID: 11400000, guid: f1d4806d6a4004635a4b3a9f79f4677d, type: 2}
