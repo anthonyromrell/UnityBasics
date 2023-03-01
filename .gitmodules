@@ -1,3 +1,6 @@
 [submodule "ScriptingEssentials/Assets/Tools"]
 	path = ScriptingEssentials/Assets/Tools
 	url = https://github.com/anthonyromrell/ArtisanDream.Tools.git
+[submodule "Inputs/Assets/Tools"]
+	path = Inputs/Assets/Tools
+	url = https://github.com/anthonyromrell/ArtisanDream.Tools.git
