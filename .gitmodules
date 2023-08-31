@@ -4,3 +4,9 @@
 [submodule "Inputs/Assets/Tools"]
 	path = Inputs/Assets/Tools
 	url = https://github.com/anthonyromrell/ArtisanDream.Tools.git
+[submodule "SideScroller/Assets/Tools"]
+	path = SideScroller/Assets/Tools
+	url = https://github.com/anthonyromrell/ArtisanDream.Tools.git
+[submodule "BrickBreaker/Assets/Tools"]
+	path = BrickBreaker/Assets/Tools
+	url = https://github.com/anthonyromrell/ArtisanDream.Tools.git
