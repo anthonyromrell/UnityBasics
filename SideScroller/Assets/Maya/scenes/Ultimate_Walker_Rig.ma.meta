@@ -1,0 +1,975 @@
+fileFormatVersion: 2
+guid: 82aeffd76eb494fdc9f4e5ef14aea89c
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'Spine' not found\n"
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: Ultimate_Walker_Rig(Clone)
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CTRL_Root
+      parentName: Ultimate_Walker_Rig(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rig_Leg_grp
+      parentName: Ultimate_Walker_Rig(Clone)
+      position: {x: 1.0877049e-31, y: 0, z: -1.7763568e-15}
+      rotation: {x: 6.123234e-17, y: 1, z: -6.123234e-17, w: -6.123234e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_leg_rig_grp
+      parentName: Rig_Leg_grp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_reverseFoot_rig_grp
+      parentName: walker_lf_leg_rig_grp
+      position: {x: 1.0877049e-31, y: 0, z: -7.888609e-31}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_heel_rev_rig_jnt
+      parentName: walker_lf_reverseFoot_rig_grp
+      position: {x: -0.5830161, y: 0.000000001539, z: -0.25085056}
+      rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_toe_rev_rig_jnt
+      parentName: walker_lf_heel_rev_rig_jnt
+      position: {x: -1.1719712, y: 0, z: 3.330669e-16}
+      rotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_ball_rev_rig_jnt
+      parentName: walker_lf_toe_rev_rig_jnt
+      position: {x: 2.220446e-16, y: -1.4536119e-16, z: -0.55929726}
+      rotation: {x: 0.7071068, y: 4.3297806e-17, z: -0.7071068, w: 4.3297806e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_ankle_rev_rig_jnt
+      parentName: walker_lf_ball_rev_rig_jnt
+      position: {x: 0.39888793, y: -0.44379592, z: 3.330669e-16}
+      rotation: {x: 1.3373177e-17, y: -2.8372593e-17, z: -0.40713918, w: 0.91336614}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf__ik_jnt
+      parentName: walker_lf_toe_rev_rig_jnt
+      position: {x: -0, y: -1.4536119e-16, z: -0.55929726}
+      rotation: {x: 0.7071068, y: 4.3297806e-17, z: -0.7071068, w: 4.3297806e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_ball_ik_jnt
+      parentName: walker_lf__ik_jnt
+      position: {x: -1.110223e-16, y: 2.0679515e-25, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_toe_ik_jnt
+      parentName: walker_lf_ball_ik_jnt
+      position: {x: -0.55929726, y: -1.4536119e-16, z: 1.110223e-16}
+      rotation: {x: 0.7071068, y: 4.3297806e-17, z: -0.7071068, w: 4.3297806e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_legFK_Grp
+      parentName: walker_lf_leg_rig_grp
+      position: {x: 1.7655273e-18, y: 3.0378656, z: -0.007208312}
+      rotation: {x: 0.49885264, y: -0.50114477, z: -0.49885264, w: 0.50114477}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_upLeg_fk_jnt
+      parentName: walker_lf_legFK_Grp
+      position: {x: 0.7286995, y: 0.035533216, z: 0.5830161}
+      rotation: {x: 0, y: 0, z: 0.9999974, w: 0.0022921166}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_knee_fk_jnt
+      parentName: walker_lf_upLeg_fk_jnt
+      position: {x: -0.9886131, y: 1.3433699e-14, z: 1.110223e-16}
+      rotation: {x: 0, y: -0, z: -0.039097756, w: 0.9992354}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_ankle_fk_jnt
+      parentName: walker_lf_knee_fk_jnt
+      position: {x: -0.87961686, y: 3.330669e-16, z: -2.220446e-16}
+      rotation: {x: 0, y: 0, z: 0.3941899, w: 0.919029}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_ball_fk_jnt
+      parentName: walker_lf_ankle_fk_jnt
+      position: {x: -0.596713, y: -5.551115e-17, z: -2.220446e-16}
+      rotation: {x: 0, y: 0, z: 0.40713918, w: 0.91336614}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_toe_fk_jnt
+      parentName: walker_lf_ball_fk_jnt
+      position: {x: -0.55929726, y: -5.2219492e-17, z: 2.220446e-16}
+      rotation: {x: 0.7071068, y: -4.3297806e-17, z: -0.7071068, w: -4.3297806e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_ball_fk_ctrl_frzGrp
+      parentName: walker_lf_leg_rig_grp
+      position: {x: -0.5830161, y: -0.000000014427808, z: 0.3618234}
+      rotation: {x: 0.7071068, y: 4.3297806e-17, z: -0.7071068, w: 4.3297806e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_ball_fk_ctrl_frzGrp
+      parentName: walker_lf_ball_fk_ctrl_frzGrp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_ball_fk_ctrl
+      parentName: walker_lf_ball_fk_ctrl_frzGrp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_ankle_fk_ctrl_frzGrp
+      parentName: walker_lf_leg_rig_grp
+      position: {x: -0.5830161, y: 0.44379592, z: -0.037064508}
+      rotation: {x: -0.6458474, y: -0.28789088, z: 0.6458474, w: 0.28789088}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_ankle_fk_ctrl_frzGrp
+      parentName: walker_lf_ankle_fk_ctrl_frzGrp
+      position: {x: -0.000000011043984, y: 0.000000011609864, z: 1.110223e-16}
+      rotation: {x: -1.110223e-16, y: -1.540744e-32, z: 2.7755576e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_ankle_fk_ctrl
+      parentName: walker_lf_ankle_fk_ctrl_frzGrp
+      position: {x: -0, y: 5.551115e-17, z: -1.110223e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_knee_fk_ctrl_frzGrp
+      parentName: walker_lf_leg_rig_grp
+      position: {x: -0.5830161, y: 1.3207235, z: 0.031665012}
+      rotation: {x: -0.4800688, y: -0.5191666, z: 0.4800688, w: 0.5191666}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_knee_fk_ctrl_frzGrp
+      parentName: walker_lf_knee_fk_ctrl_frzGrp
+      position: {x: 7.86371e-12, y: 6.1631256e-13, z: -1.110223e-16}
+      rotation: {x: 0, y: 7.70372e-34, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_knee_fk_ctrl
+      parentName: walker_lf_knee_fk_ctrl_frzGrp
+      position: {x: 2.220446e-16, y: -1.3877788e-17, z: -1.110223e-16}
+      rotation: {x: 1.2325952e-32, y: -1.540744e-33, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_upLegupJntFkCtrl_grp
+      parentName: walker_lf_leg_rig_grp
+      position: {x: -0.5830161, y: 2.3093367, z: 0.031665035}
+      rotation: {x: -0.5, y: -0.5, z: 0.5, w: 0.5}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_upLeg_fk_ctrl_frzGrp
+      parentName: walker_lf_leg_rig_grp
+      position: {x: -0.5830161, y: 2.3093367, z: 0.031665035}
+      rotation: {x: -0.5, y: -0.5, z: 0.5, w: 0.5}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_upLeg_fk_ctrl
+      parentName: walker_lf_upLeg_fk_ctrl_frzGrp
+      position: {x: -0, y: 0, z: -1.110223e-16}
+      rotation: {x: 5.551115e-17, y: 4.414048e-33, z: 5.551115e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_legIK_Grp
+      parentName: walker_lf_leg_rig_grp
+      position: {x: 1.7655273e-18, y: 3.0378656, z: -0.007208312}
+      rotation: {x: 0.49885264, y: -0.50114477, z: -0.49885264, w: 0.50114477}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_upLeg_ik_jnt
+      parentName: walker_lf_legIK_Grp
+      position: {x: 0.7286995, y: 0.035533216, z: 0.5830161}
+      rotation: {x: 0, y: 0, z: 0.9999974, w: 0.0022921166}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_knee_ik_jnt
+      parentName: walker_lf_upLeg_ik_jnt
+      position: {x: -0.9886131, y: 1.3433699e-14, z: 1.110223e-16}
+      rotation: {x: 1.8475517e-24, y: -1.229e-22, z: -0.039097782, w: 0.9992354}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_ankle_ik_jnt
+      parentName: walker_lf_knee_ik_jnt
+      position: {x: -0.87961686, y: 3.330669e-16, z: -2.220446e-16}
+      rotation: {x: 0, y: 0, z: 0.3941899, w: 0.919029}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_heel_ik_ctrl_frzGrp
+      parentName: walker_lf_leg_rig_grp
+      position: {x: -0.5830161, y: 0.000000001539, z: -0.25085056}
+      rotation: {x: -1.2246469e-16, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_heel_ik_ctrl
+      parentName: walker_lf_heel_ik_ctrl_frzGrp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_leg_ikHandle
+      parentName: walker_lf_leg_rig_grp
+      position: {x: -0.5830161, y: 0.44379592, z: -0.037064508}
+      rotation: {x: 3.925231e-17, y: 1.110223e-16, z: 2.5749389e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_foot_ctrl
+      parentName: walker_lf_leg_rig_grp
+      position: {x: -0.5830161, y: -0.000000012344959, z: 0.21793789}
+      rotation: {x: 8.326673e-17, y: 2.7755576e-17, z: 2.7755576e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_knee_pv_ctrl_frzGrp
+      parentName: walker_lf_leg_rig_grp
+      position: {x: -0.5830161, y: 1.2843261, z: 1.0196079}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_knee_line_loc
+      parentName: walker_lf_knee_pv_ctrl_frzGrp
+      position: {x: -4.6399995e-11, y: 0.036397416, z: -0.9879429}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: abRTLine_walker_lf_knee_line_loc
+      parentName: walker_lf_knee_line_loc
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_legPvCtrlGrp_space_grp
+      parentName: walker_lf_knee_pv_ctrl_frzGrp
+      position: {x: 0.5830161, y: -1.2843261, z: -1.0196079}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_knee_pv_ctrl
+      parentName: walker_lf_legPvCtrlGrp_space_grp
+      position: {x: -0.5830161, y: 1.2843261, z: 1.0196079}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_knee_pv_ctrl_annLoc
+      parentName: walker_lf_knee_pv_ctrl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_legStrDist_dist
+      parentName: walker_lf_leg_rig_grp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_legStrDist_dist_sp
+      parentName: walker_lf_leg_rig_grp
+      position: {x: -0.5830161, y: 2.3093367, z: 0.031665035}
+      rotation: {x: -0.5, y: -0.5, z: 0.5, w: 0.5}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_legStrDist_dist_ep
+      parentName: walker_lf_leg_rig_grp
+      position: {x: -0.5830161, y: 0.44379592, z: -0.037064508}
+      rotation: {x: 0.6458474, y: 0.28789088, z: -0.6458474, w: -0.28789088}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_upLegPvCtrl_dist
+      parentName: walker_lf_leg_rig_grp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_upLegPvCtrl_dist_sp
+      parentName: walker_lf_leg_rig_grp
+      position: {x: -0.5830161, y: 2.3093367, z: 0.031665035}
+      rotation: {x: -0.5, y: -0.5, z: 0.5, w: 0.5}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_upLegPvCtrl_dist_ep
+      parentName: walker_lf_leg_rig_grp
+      position: {x: -0.5830161, y: 1.2843261, z: 1.0196079}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_legPvIkCtrl_dist
+      parentName: walker_lf_leg_rig_grp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_legPvIkCtrl_dist_sp
+      parentName: walker_lf_leg_rig_grp
+      position: {x: -0.5830161, y: 1.2843261, z: 1.0196079}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_legPvIkCtrl_dist_ep
+      parentName: walker_lf_leg_rig_grp
+      position: {x: -0.5830161, y: 0.44379592, z: -0.037064508}
+      rotation: {x: 0.6458474, y: 0.28789088, z: -0.6458474, w: -0.28789088}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_legIkCtrl_space_grp
+      parentName: walker_lf_leg_rig_grp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_ankleBallReader_UpLeg_jnt
+      parentName: walker_lf_leg_rig_grp
+      position: {x: -0.5830161, y: 2.3093367, z: 0.031665035}
+      rotation: {x: -0.5, y: -0.5, z: 0.5, w: 0.5}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_ankleBallReader_Knee_jnt
+      parentName: walker_lf_ankleBallReader_UpLeg_jnt
+      position: {x: -0.9886131, y: 1.3343493e-14, z: 2.220446e-16}
+      rotation: {x: -2.6105972e-17, y: 4.9470112e-17, z: -0.039097782, w: 0.9992354}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_ankleBallReader_Ankle_jnt
+      parentName: walker_lf_ankleBallReader_Knee_jnt
+      position: {x: -0.87961686, y: 0.000000023176646, z: 1.110223e-16}
+      rotation: {x: -6.6679943e-18, y: 5.553694e-17, z: 0.3941899, w: 0.919029}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_ankleBallReader_Ball_jnt
+      parentName: walker_lf_ankleBallReader_Ankle_jnt
+      position: {x: -0.596713, y: -0.000000015722534, z: -1.110223e-16}
+      rotation: {x: 3.6248874e-17, y: 4.2600854e-17, z: 0.40713918, w: 0.91336614}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_charVars
+      parentName: Rig_Leg_grp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lfLegIkCtrl_space_switch_grp
+      parentName: Rig_Leg_grp
+      position: {x: -0.5830161, y: 0.000000001539, z: -0.25085056}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_leg_rig_grp
+      parentName: Rig_Leg_grp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_reverseFoot_rig_grp
+      parentName: walker_rt_leg_rig_grp
+      position: {x: 1.0877049e-31, y: 0, z: -7.888609e-31}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_heel_rev_rig_jnt
+      parentName: walker_rt_reverseFoot_rig_grp
+      position: {x: 0.5830161, y: 0.000000001539, z: -0.25085056}
+      rotation: {x: 0, y: 0.70710677, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_toe_rev_rig_jnt
+      parentName: walker_rt_heel_rev_rig_jnt
+      position: {x: -1.1719716, y: -7.2858485e-17, z: 3.996803e-15}
+      rotation: {x: 0.7071068, y: 4.32978e-17, z: 0.70710677, w: -4.3297803e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_ball_rev_rig_jnt
+      parentName: walker_rt_toe_rev_rig_jnt
+      position: {x: 1.110223e-16, y: 8.5485814e-17, z: 0.559298}
+      rotation: {x: 0.7071068, y: -4.3297806e-17, z: -0.7071068, w: -4.3297806e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_ankle_rev_rig_jnt
+      parentName: walker_rt_ball_rev_rig_jnt
+      position: {x: -0.3988875, y: 0.443796, z: 0}
+      rotation: {x: 7.7029884e-17, y: -1.7443542e-16, z: -0.40713918, w: 0.91336614}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt__ik_jnt
+      parentName: walker_rt_toe_rev_rig_jnt
+      position: {x: 1.110223e-16, y: 8.5485814e-17, z: 0.559298}
+      rotation: {x: 0.7071068, y: -4.3297806e-17, z: -0.7071068, w: -4.3297806e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_ball_ik_jnt
+      parentName: walker_rt__ik_jnt
+      position: {x: 5.551115e-17, y: -2.0679515e-25, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_toe_ik_jnt
+      parentName: walker_rt_ball_ik_jnt
+      position: {x: 0.559298, y: 8.5485814e-17, z: 2.220446e-16}
+      rotation: {x: 0.7071068, y: -4.3297806e-17, z: -0.7071068, w: -4.3297806e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_legFK_Grp
+      parentName: walker_rt_leg_rig_grp
+      position: {x: 1.7655273e-18, y: 3.0378656, z: -0.007208312}
+      rotation: {x: 0.49885264, y: -0.50114477, z: -0.49885264, w: 0.50114477}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_upLeg_fk_jnt
+      parentName: walker_rt_legFK_Grp
+      position: {x: 0.72869617, y: 0.035533197, z: -0.583016}
+      rotation: {x: 0, y: -0, z: -0.0022921166, w: 0.9999974}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_knee_fk_jnt
+      parentName: walker_rt_upLeg_fk_jnt
+      position: {x: 0.98862, y: 0.000000022361242, z: 4.440892e-16}
+      rotation: {x: 0, y: -0, z: -0.039097756, w: 0.9992354}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_ankle_fk_jnt
+      parentName: walker_rt_knee_fk_jnt
+      position: {x: 0.8796132, y: -0.00000026256023, z: -2.220446e-16}
+      rotation: {x: 0, y: 0, z: 0.3941899, w: 0.919029}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_ball_fk_jnt
+      parentName: walker_rt_ankle_fk_jnt
+      position: {x: 0.59671277, y: -0.0000003750602, z: -2.220446e-16}
+      rotation: {x: 0, y: 0, z: 0.40713918, w: 0.91336614}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_toe_fk_jnt
+      parentName: walker_rt_ball_fk_jnt
+      position: {x: 0.559298, y: 3.824761e-18, z: 1.110223e-16}
+      rotation: {x: 0.7071068, y: -2.0030707e-16, z: -0.7071068, w: -2.0030707e-16}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_ball_fk_ctrl_frzGrp
+      parentName: walker_rt_leg_rig_grp
+      position: {x: 0.583016, y: 0.000000034170835, z: 0.361823}
+      rotation: {x: 2.775558e-17, y: -0.7071068, z: 2.775558e-17, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_ball_fk_ctrl_frzGrp
+      parentName: walker_rt_ball_fk_ctrl_frzGrp
+      position: {x: 5.551115e-17, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_ball_fk_ctrl
+      parentName: walker_rt_ball_fk_ctrl_frzGrp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_ankle_fk_ctrl_frzGrp
+      parentName: walker_rt_leg_rig_grp
+      position: {x: 0.583016, y: 0.443796, z: -0.0370645}
+      rotation: {x: 0.28789088, y: -0.6458474, z: -0.28789088, w: 0.6458474}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_ankle_fk_ctrl_frzGrp
+      parentName: walker_rt_ankle_fk_ctrl_frzGrp
+      position: {x: -0.000000010942629, y: 0.000000011503316, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_ankle_fk_ctrl
+      parentName: walker_rt_ankle_fk_ctrl_frzGrp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_knee_fk_ctrl_frzGrp
+      parentName: walker_rt_leg_rig_grp
+      position: {x: 0.583016, y: 1.32072, z: 0.031665}
+      rotation: {x: -0.5191666, y: 0.4800688, z: 0.5191666, w: -0.4800688}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_knee_fk_ctrl_frzGrp
+      parentName: walker_rt_knee_fk_ctrl_frzGrp
+      position: {x: -0.000000016752368, y: -0.0000000013129726, z: 1.110223e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_knee_fk_ctrl
+      parentName: walker_rt_knee_fk_ctrl_frzGrp
+      position: {x: -0, y: 1.3877788e-17, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_upLegupJntFkCtrl_grp
+      parentName: walker_rt_leg_rig_grp
+      position: {x: 0.583016, y: 2.30934, z: 0.031665}
+      rotation: {x: 0.5, y: -0.5, z: -0.5, w: 0.5}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_upLeg_fk_ctrl_frzGrp
+      parentName: walker_rt_leg_rig_grp
+      position: {x: 0.583016, y: 2.30934, z: 0.031665}
+      rotation: {x: 0.5, y: -0.5, z: -0.5, w: 0.5}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_upLeg_fk_ctrl
+      parentName: walker_rt_upLeg_fk_ctrl_frzGrp
+      position: {x: -0, y: -6.938894e-18, z: 0}
+      rotation: {x: 1.110223e-16, y: -1.110223e-16, z: 1.6543612e-24, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_legIK_Grp
+      parentName: walker_rt_leg_rig_grp
+      position: {x: 1.7655273e-18, y: 3.0378656, z: -0.007208312}
+      rotation: {x: 0.49885264, y: -0.50114477, z: -0.49885264, w: 0.50114477}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_upLeg_ik_jnt
+      parentName: walker_rt_legIK_Grp
+      position: {x: 0.72869617, y: 0.035533197, z: -0.583016}
+      rotation: {x: 0, y: -0, z: -0.0022921166, w: 0.9999974}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_knee_ik_jnt
+      parentName: walker_rt_upLeg_ik_jnt
+      position: {x: 0.98862, y: 0.000000022361242, z: 4.440892e-16}
+      rotation: {x: -8.824984e-23, y: -8.041586e-21, z: -0.039096862, w: 0.99923545}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_ankle_ik_jnt
+      parentName: walker_rt_knee_ik_jnt
+      position: {x: 0.8796132, y: -0.00000026256023, z: -2.220446e-16}
+      rotation: {x: 0, y: 0, z: 0.3941899, w: 0.919029}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_heel_ik_ctrl_frzGrp
+      parentName: walker_rt_leg_rig_grp
+      position: {x: 0.5830161, y: 0.000000001539, z: -0.25085056}
+      rotation: {x: -6.123234e-17, y: 1.6081226e-16, z: 2.8327693e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_heel_ik_ctrl
+      parentName: walker_rt_heel_ik_ctrl_frzGrp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_leg_ikHandle
+      parentName: walker_rt_leg_rig_grp
+      position: {x: 0.583016, y: 0.443796, z: -0.0370645}
+      rotation: {x: -7.850462e-17, y: 0, z: -1.5700924e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_foot_ctrl
+      parentName: walker_rt_leg_rig_grp
+      position: {x: 0.58301604, y: -0.00000009055158, z: 0.21793963}
+      rotation: {x: 2.220446e-16, y: -2.7755576e-16, z: -1.6653345e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_knee_pv_ctrl_frzGrp
+      parentName: walker_rt_leg_rig_grp
+      position: {x: 0.583016, y: 1.2843224, z: 1.0196147}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_knee_line_loc
+      parentName: walker_rt_knee_pv_ctrl_frzGrp
+      position: {x: -6.661338e-16, y: 0.0363976, z: -0.9879497}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: abRTLine_walker_rt_knee_line_loc
+      parentName: walker_rt_knee_line_loc
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_legPvCtrlGrp_space_grp
+      parentName: walker_rt_knee_pv_ctrl_frzGrp
+      position: {x: -0.583016, y: -1.2843224, z: -1.0196147}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_knee_pv_ctrl
+      parentName: walker_rt_legPvCtrlGrp_space_grp
+      position: {x: 0.583016, y: 1.2843224, z: 1.0196147}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_knee_pv_ctrl_annLoc
+      parentName: walker_rt_knee_pv_ctrl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_legStrDist_dist
+      parentName: walker_rt_leg_rig_grp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_legStrDist_dist_sp
+      parentName: walker_rt_leg_rig_grp
+      position: {x: 0.583016, y: 2.30934, z: 0.031665}
+      rotation: {x: 0.5, y: -0.5, z: -0.5, w: 0.5}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_legStrDist_dist_ep
+      parentName: walker_rt_leg_rig_grp
+      position: {x: 0.583016, y: 0.443796, z: -0.0370645}
+      rotation: {x: 0.28789088, y: -0.6458474, z: -0.28789088, w: 0.6458474}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_upLegPvCtrl_dist
+      parentName: walker_rt_leg_rig_grp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_upLegPvCtrl_dist_sp
+      parentName: walker_rt_leg_rig_grp
+      position: {x: 0.583016, y: 2.30934, z: 0.031665}
+      rotation: {x: 0.5, y: -0.5, z: -0.5, w: 0.5}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_upLegPvCtrl_dist_ep
+      parentName: walker_rt_leg_rig_grp
+      position: {x: 0.583016, y: 1.2843224, z: 1.0196147}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_legPvIkCtrl_dist
+      parentName: walker_rt_leg_rig_grp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_legPvIkCtrl_dist_sp
+      parentName: walker_rt_leg_rig_grp
+      position: {x: 0.583016, y: 1.2843224, z: 1.0196147}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_legPvIkCtrl_dist_ep
+      parentName: walker_rt_leg_rig_grp
+      position: {x: 0.583016, y: 0.443796, z: -0.0370645}
+      rotation: {x: 0.28789088, y: -0.6458474, z: -0.28789088, w: 0.6458474}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_legIkCtrl_space_grp
+      parentName: walker_rt_leg_rig_grp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_ankleBallReader_UpLeg_jnt
+      parentName: walker_rt_leg_rig_grp
+      position: {x: 0.583016, y: 2.30934, z: 0.031665}
+      rotation: {x: 0.5, y: -0.5, z: -0.5, w: 0.5}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_ankleBallReader_Knee_jnt
+      parentName: walker_rt_ankleBallReader_UpLeg_jnt
+      position: {x: 0.98862, y: 0.000000022361242, z: 5.551115e-16}
+      rotation: {x: 2.6105926e-17, y: -4.9470135e-17, z: -0.039096862, w: 0.99923545}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_ankleBallReader_Ankle_jnt
+      parentName: walker_rt_ankleBallReader_Knee_jnt
+      position: {x: 0.8796132, y: 0.0000005257112, z: 2.220446e-16}
+      rotation: {x: 6.6679943e-18, y: -5.553694e-17, z: 0.39418906, w: 0.91902936}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_ankleBallReader_Ball_jnt
+      parentName: walker_rt_ankleBallReader_Ankle_jnt
+      position: {x: 0.59671277, y: -0.0000009098085, z: -1.110223e-16}
+      rotation: {x: -3.6248914e-17, y: -4.260082e-17, z: 0.40713918, w: 0.91336614}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rtLegIkCtrl_space_switch_grp
+      parentName: Rig_Leg_grp
+      position: {x: 0.5830161, y: 0.000000001539, z: -0.25085056}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Skeleton_grp
+      parentName: Ultimate_Walker_Rig(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_hip_jnt
+      parentName: Skeleton_grp
+      position: {x: -8.827636e-19, y: 3.0378656, z: 0.007208312}
+      rotation: {x: 0.49885264, y: -0.50114477, z: -0.49885264, w: 0.5011448}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1.0000002}
+    - name: walker_rt_upLeg_jnt
+      parentName: walker_hip_jnt
+      position: {x: 0.72869617, y: 0.035533197, z: -0.583016}
+      rotation: {x: 0.000000029802322, y: -0.000000029802322, z: -0.0022921413, w: 0.99999744}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000001}
+    - name: walker_rt_knee_jnt
+      parentName: walker_rt_upLeg_jnt
+      position: {x: 0.98862, y: 0.000000022361242, z: 4.440892e-16}
+      rotation: {x: 0.00000002859426, y: 0.00000002867997, z: -0.039096907, w: 0.9992354}
+      scale: {x: 1.0000004, y: 1.0000005, z: 1.0000001}
+    - name: walker_rt_ankle_jnt
+      parentName: walker_rt_knee_jnt
+      position: {x: 0.8796132, y: -0.00000026256023, z: 0}
+      rotation: {x: -0.000000023460231, y: -0.000000037111892, z: 0.3941891, w: 0.91902936}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: walker_rt_ball_jnt
+      parentName: walker_rt_ankle_jnt
+      position: {x: 0.59671277, y: -0.0000003750602, z: -1.110223e-16}
+      rotation: {x: 0, y: 0, z: 0.40713918, w: 0.91336614}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_rt_toe_jnt
+      parentName: walker_rt_ball_jnt
+      position: {x: 0.559298, y: -1.3824482e-16, z: 0}
+      rotation: {x: 0.7071068, y: -4.3297806e-17, z: -0.7071068, w: -4.3297806e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_upLeg_jnt
+      parentName: walker_hip_jnt
+      position: {x: 0.7286995, y: 0.035533216, z: 0.5830161}
+      rotation: {x: -0.000000044703484, y: -0.000000029802322, z: 0.9999974, w: 0.0022921562}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000002}
+    - name: walker_lf_knee_jnt
+      parentName: walker_lf_upLeg_jnt
+      position: {x: -0.9886131, y: 1.3412882e-14, z: 2.220446e-16}
+      rotation: {x: -0.000000027977501, y: -0.000000043568345, z: -0.03909776, w: 0.99923545}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000002}
+    - name: walker_lf_ankle_jnt
+      parentName: walker_lf_knee_jnt
+      position: {x: -0.87961686, y: 3.469447e-16, z: -1.110223e-16}
+      rotation: {x: -0.000000038348578, y: -0.0000000377286, z: -0.39418992, w: -0.91902906}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: walker_lf_ball_jnt
+      parentName: walker_lf_ankle_jnt
+      position: {x: -0.596713, y: -2.220446e-16, z: -2.220446e-16}
+      rotation: {x: 0, y: 0, z: 0.40713918, w: 0.91336614}
+      scale: {x: 1, y: 1, z: 1}
+    - name: walker_lf_toe_jnt
+      parentName: walker_lf_ball_jnt
+      position: {x: -0.55929726, y: -5.2219492e-17, z: 1.110223e-16}
+      rotation: {x: 0.7071068, y: 4.3297806e-17, z: -0.7071068, w: 4.3297806e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body_Rig_Grp
+      parentName: Ultimate_Walker_Rig(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Mesh_Flex_Grp
+      parentName: Body_Rig_Grp
+      position: {x: -0, y: 2.0378656, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Extras_Grp
+      parentName: Mesh_Flex_Grp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ballTypes_olcek
+      parentName: Extras_Grp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Loc_kuyruk
+      parentName: Mesh_Flex_Grp
+      position: {x: -0, y: 1, z: 0.9777889}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Mesh_body_Grp
+      parentName: Mesh_Flex_Grp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: simple_body
+      parentName: Mesh_body_Grp
+      position: {x: -0, y: 1, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: simple_body_line
+      parentName: Mesh_body_Grp
+      position: {x: -0, y: 1, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 0.59933686, z: 1}
+    - name: CNT_Grp
+      parentName: Body_Rig_Grp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CTRL_Top_Grp
+      parentName: CNT_Grp
+      position: {x: -0, y: 4.0378656, z: 1.110223e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CTRL_Top
+      parentName: CTRL_Top_Grp
+      position: {x: -0, y: 0, z: -1.110223e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: locator2
+      parentName: CTRL_Top
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ikHandle1
+      parentName: CTRL_Top
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CTRL_Bottom_Grp
+      parentName: CNT_Grp
+      position: {x: -0, y: 2.0378656, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CTRL_Bottom
+      parentName: CTRL_Bottom_Grp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Jnt_main
+      parentName: CTRL_Bottom
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: joint2
+      parentName: Jnt_main
+      position: {x: -0, y: 2, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: locator1
+      parentName: CTRL_Bottom
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CTRL_Main_Grp
+      parentName: CNT_Grp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CTRL_Main
+      parentName: CTRL_Main_Grp
+      position: {x: -0, y: 3.0378656, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: JNT_Grp
+      parentName: CNT_Grp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: JNT_kuyruk_01
+      parentName: JNT_Grp
+      position: {x: -0, y: 1, z: 1}
+      rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: JNT_kuyruk_02
+      parentName: JNT_kuyruk_01
+      position: {x: -0.725577, y: 2.220446e-16, z: 1.2888837e-15}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: JNT_kuyruk_03
+      parentName: JNT_kuyruk_02
+      position: {x: -0.9356821, y: 2.220446e-16, z: 1.6621053e-15}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: JNT_kuyruk_04
+      parentName: JNT_kuyruk_03
+      position: {x: -0.5240476, y: -2.220446e-16, z: 9.308956e-16}
+      rotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: JNT_kuyruk_05
+      parentName: JNT_kuyruk_04
+      position: {x: 3.2133984e-31, y: 0, z: 0.8146933}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Mesh_Grp
+      parentName: Ultimate_Walker_Rig(Clone)
+      position: {x: -0.5830159, y: 1.3207235, z: 0.12797071}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: leg_binded_grp
+      parentName: Mesh_Grp
+      position: {x: 0.5830159, y: -1.3207235, z: -0.12797071}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_leg_Grp
+      parentName: leg_binded_grp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_upperleg
+      parentName: R_leg_Grp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_leg
+      parentName: R_leg_Grp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_leg_Grp
+      parentName: leg_binded_grp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_upperleg
+      parentName: L_leg_Grp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_leg
+      parentName: L_leg_Grp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: leg_scale_Const
+      parentName: Mesh_Grp
+      position: {x: 0.5830159, y: -1.3207235, z: -0.12797071}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_but
+      parentName: leg_scale_Const
+      position: {x: -0.5830159, y: 2.3093367, z: -0.031665}
+      rotation: {x: 6.123234e-17, y: 1, z: -6.123234e-17, w: -6.123234e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_but
+      parentName: leg_scale_Const
+      position: {x: 0.5830159, y: 2.3093367, z: -0.031665}
+      rotation: {x: 6.123234e-17, y: 1, z: -6.123234e-17, w: -6.123234e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_knee
+      parentName: leg_scale_Const
+      position: {x: -0.58301586, y: 1.3207237, z: -0.031665}
+      rotation: {x: -2.8327693e-16, y: 1, z: -1.2939819e-14, w: -6.123234e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_knee
+      parentName: leg_scale_Const
+      position: {x: 0.58301586, y: 1.3207237, z: -0.031665}
+      rotation: {x: 6.123234e-17, y: 1, z: 1.8375893e-15, w: -6.123234e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_ankle
+      parentName: leg_scale_Const
+      position: {x: -0.58301586, y: 0.4437959, z: 0.037064508}
+      rotation: {x: -2.8327693e-16, y: 1, z: -6.123234e-17, w: 2.8327693e-16}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_ankle
+      parentName: leg_scale_Const
+      position: {x: 0.58301586, y: 0.4437959, z: 0.037064508}
+      rotation: {x: 6.123234e-17, y: 1, z: -6.123234e-17, w: -6.123234e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_foot
+      parentName: leg_scale_Const
+      position: {x: -0.6469638, y: 0.38307044, z: 0.019844182}
+      rotation: {x: -2.8327693e-16, y: 1, z: -6.123234e-17, w: 2.8327693e-16}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_foot
+      parentName: leg_scale_Const
+      position: {x: 0.6469638, y: 0.38307044, z: 0.019844182}
+      rotation: {x: 6.123234e-17, y: 1, z: -6.123234e-17, w: -6.123234e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_toe
+      parentName: leg_scale_Const
+      position: {x: -0.6469638, y: 0.38307044, z: 0.019844182}
+      rotation: {x: 6.123234e-17, y: 1, z: -6.123234e-17, w: -6.123234e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_toe
+      parentName: leg_scale_Const
+      position: {x: 0.6469638, y: 0.38307044, z: 0.019844182}
+      rotation: {x: 6.123234e-17, y: 1, z: -6.123234e-17, w: -2.8327693e-16}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 100
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
