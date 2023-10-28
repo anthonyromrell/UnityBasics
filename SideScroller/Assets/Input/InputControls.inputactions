@@ -1,0 +1,65 @@
+{
+    "name": "InputControls",
+    "maps": [
+        {
+            "name": "KeyActionMap",
+            "id": "7fc9300c-789c-4c7a-9922-601031d6794a",
+            "actions": [
+                {
+                    "name": "ArrowKeys",
+                    "type": "Button",
+                    "id": "d11f32d0-1c58-4468-803c-72b8cbaa2535",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Spacebar",
+                    "type": "Button",
+                    "id": "175f5096-80e2-4ef8-b5f4-731c70134f65",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "34b77066-7d05-428b-bf7f-24b57b07f2ca",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "Hold,Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ArrowKeys",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cc8c022c-f781-4540-9801-a54ac382d7ab",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "Hold,Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ArrowKeys",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "aeadbb45-c318-4f4e-b57d-25f0d79df18a",
+                    "path": "<Keyboard>/space",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Spacebar",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
