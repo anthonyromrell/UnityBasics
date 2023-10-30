@@ -114,7 +114,7 @@ GameObject:
   - component: {fileID: 8379939515090645537}
   - component: {fileID: 352003035448158190}
   - component: {fileID: 7487357184736785622}
-  - component: {fileID: 486876243660602428}
+  - component: {fileID: 6539343550530962954}
   m_Layer: 0
   m_Name: AnimControllerJumpOffTrigger
   m_TagString: Untagged
@@ -185,7 +185,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &486876243660602428
+--- !u!114 &6539343550530962954
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -194,51 +194,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5547175446637908278}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a28a400391344b9c88e28b4820b5ed7, type: 3}
+  m_Script: {fileID: 11500000, guid: 6748811e457e04a20a2403d3781a4487, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  triggerEnterEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2604615136044503648}
-        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-        m_MethodName: SetTrigger
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Land
-          m_BoolArgument: 0
-        m_CallState: 2
-  triggerEnterRepeatEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  triggerEnterEndEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  triggerExitEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2604615136044503648}
-        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-        m_MethodName: ResetTrigger
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Land
-          m_BoolArgument: 0
-        m_CallState: 2
-  delayTime: 0.01
-  canRepeat: 0
-  repeatTimes: 10
+  animator: {fileID: 2604615136044503648}
 --- !u!1 &9170048583527964389
 GameObject:
   m_ObjectHideFlags: 0
@@ -368,19 +327,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2304980653310536707, guid: ca1e880c42a0e44f88de18856e4cb40d,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3261815257176905578}
-    - targetCorrespondingSourceObject: {fileID: 2304980653310536707, guid: ca1e880c42a0e44f88de18856e4cb40d,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5736887384094164775}
-    - targetCorrespondingSourceObject: {fileID: 2304980653310536707, guid: ca1e880c42a0e44f88de18856e4cb40d,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4236932867367045642}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca1e880c42a0e44f88de18856e4cb40d, type: 3}
 --- !u!4 &67905153711825502 stripped
 Transform:
@@ -388,158 +335,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1460855666559276263}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &845251540608956644 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2304980653310536707, guid: ca1e880c42a0e44f88de18856e4cb40d,
-    type: 3}
-  m_PrefabInstance: {fileID: 1460855666559276263}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3261815257176905578
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 845251540608956644}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c00b8d18ed074924a9bc7875f2b74d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inputControlsObj: {fileID: 11400000, guid: 9b91bb078f76e4826a86e15db0905f0b, type: 2}
-  arrowEventCall:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2604615136044503648}
-        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-        m_MethodName: ResetTrigger
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Idle
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2604615136044503648}
-        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-        m_MethodName: SetTrigger
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Walk
-          m_BoolArgument: 0
-        m_CallState: 2
-  spaceEventCall:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2604615136044503648}
-        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-        m_MethodName: SetTrigger
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Jump
-          m_BoolArgument: 0
-        m_CallState: 2
-  eventStop:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2604615136044503648}
-        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-        m_MethodName: SetTrigger
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Idle
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &5736887384094164775
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 845251540608956644}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65180f705bb904ee98a80edc6dcf0d55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  action: {fileID: 11400000, guid: 3433ee032fa2f4215898aad15dba3fcd, type: 2}
-  startEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  respondEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2604615136044503648}
-        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-        m_MethodName: ResetTrigger
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Land
-          m_BoolArgument: 0
-        m_CallState: 2
-  respondLateEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  runInAnimatorEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  holdTime: 0.1
---- !u!114 &4236932867367045642
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 845251540608956644}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65180f705bb904ee98a80edc6dcf0d55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  action: {fileID: 11400000, guid: 66cd8efb4514f42299aca96dd6a26a27, type: 2}
-  startEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  respondEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3261815257176905578}
-        m_TargetAssemblyTypeName: InputControlsEvents, Assembly-CSharp
-        m_MethodName: InputCheck
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  respondLateEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  runInAnimatorEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  holdTime: 0.1
 --- !u!95 &2604615136044503648 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 3486757906889049735, guid: ca1e880c42a0e44f88de18856e4cb40d,
