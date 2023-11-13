@@ -1,6 +1,6 @@
 //Maya ASCII 2023 scene
 //Name: walk_anim.ma
-//Last modified: Tue, Nov 07, 2023 12:34:57 AM
+//Last modified: Thu, Nov 09, 2023 10:16:30 PM
 //Codeset: UTF-8
 file -rdi 1 -ns "Ultimate_Walker_Rig" -rfn "Ultimate_Walker_RigRN" -op "v=0;"
 		 -typ "mayaAscii" "C:/Users/clayt/Downloads/Ultimate_Walker_v1.0.1/Ultimate_Walker_Rig.ma";
@@ -10,13 +10,14 @@ requires maya "2023";
 requires "stereoCamera" "10.0";
 requires -nodeType "gameFbxExporter" "gameFbxExporter" "1.0";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.2.1.1";
+requires "stereoCamera" "10.0";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2023";
 fileInfo "version" "2023";
 fileInfo "cutIdentifier" "202211021031-847a9f9623";
 fileInfo "osv" "Mac OS X 10.16";
-fileInfo "UUID" "CAB5BBF1-774A-49FB-D25A-B28B058BC280";
+fileInfo "UUID" "CAF664DC-F14C-5486-D75C-CAA36D0EB039";
 createNode transform -s -n "persp";
 	rename -uid "9D25D1F6-4555-0EB1-1E29-3986955D0080";
 	setAttr ".v" no;
@@ -84,21 +85,21 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "990C6B33-DD46-41D9-9122-E7BDB4B7CEDA";
+	rename -uid "905EF72A-254C-138D-7193-D4818E732F2E";
 	setAttr -s 4 ".lnk";
 	setAttr -s 4 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "0DB64717-1345-D14E-A04B-C7A470D1A474";
+	rename -uid "07856C2E-6F46-945D-CC9A-0AB9605F779B";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "11CBDD83-6947-E7F0-9AC9-D7A6B612D2E3";
+	rename -uid "10A3F41E-D349-37E0-4A42-4CA4294256F2";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "B7DB315C-FF44-E7C6-3D03-8095E99A86DC";
+	rename -uid "873FEC89-3F47-F54C-83F2-7D8A4B94D97E";
 	setAttr -s 2 ".dli[1]"  1;
 createNode displayLayer -n "defaultLayer";
 	rename -uid "A3E6EFD0-4624-EEB6-2B95-11914059DE6C";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "69202F94-9142-D29B-0A46-06BCC215E561";
+	rename -uid "62B6E93E-B84A-C021-A3FB-09B7931AD6B6";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "D7CF66C3-46E1-26A0-F8B1-F985CE9CF6C1";
 	setAttr ".g" yes;
@@ -117,7 +118,7 @@ createNode aiAOVDriver -s -n "defaultArnoldDisplayDriver";
 	setAttr ".ai_translator" -type "string" "maya";
 createNode reference -n "Ultimate_Walker_RigRN";
 	rename -uid "AE8C83DA-4836-B473-750C-9BA902CDA109";
-	setAttr -s 88 ".phl";
+	setAttr -s 136 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
 	setAttr ".phl[3]" 0;
@@ -206,6 +207,54 @@ createNode reference -n "Ultimate_Walker_RigRN";
 	setAttr ".phl[86]" 0;
 	setAttr ".phl[87]" 0;
 	setAttr ".phl[88]" 0;
+	setAttr ".phl[89]" 0;
+	setAttr ".phl[90]" 0;
+	setAttr ".phl[91]" 0;
+	setAttr ".phl[92]" 0;
+	setAttr ".phl[93]" 0;
+	setAttr ".phl[94]" 0;
+	setAttr ".phl[95]" 0;
+	setAttr ".phl[96]" 0;
+	setAttr ".phl[97]" 0;
+	setAttr ".phl[98]" 0;
+	setAttr ".phl[99]" 0;
+	setAttr ".phl[100]" 0;
+	setAttr ".phl[101]" 0;
+	setAttr ".phl[102]" 0;
+	setAttr ".phl[103]" 0;
+	setAttr ".phl[104]" 0;
+	setAttr ".phl[105]" 0;
+	setAttr ".phl[106]" 0;
+	setAttr ".phl[107]" 0;
+	setAttr ".phl[108]" 0;
+	setAttr ".phl[109]" 0;
+	setAttr ".phl[110]" 0;
+	setAttr ".phl[111]" 0;
+	setAttr ".phl[112]" 0;
+	setAttr ".phl[113]" 0;
+	setAttr ".phl[114]" 0;
+	setAttr ".phl[115]" 0;
+	setAttr ".phl[116]" 0;
+	setAttr ".phl[117]" 0;
+	setAttr ".phl[118]" 0;
+	setAttr ".phl[119]" 0;
+	setAttr ".phl[120]" 0;
+	setAttr ".phl[121]" 0;
+	setAttr ".phl[122]" 0;
+	setAttr ".phl[123]" 0;
+	setAttr ".phl[124]" 0;
+	setAttr ".phl[125]" 0;
+	setAttr ".phl[126]" 0;
+	setAttr ".phl[127]" 0;
+	setAttr ".phl[128]" 0;
+	setAttr ".phl[129]" 0;
+	setAttr ".phl[130]" 0;
+	setAttr ".phl[131]" 0;
+	setAttr ".phl[132]" 0;
+	setAttr ".phl[133]" 0;
+	setAttr ".phl[134]" 0;
+	setAttr ".phl[135]" 0;
+	setAttr ".phl[136]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Ultimate_Walker_RigRN"
 		"Ultimate_Walker_RigRN" 3
@@ -215,7 +264,7 @@ createNode reference -n "Ultimate_Walker_RigRN";
 		
 		2 "Ultimate_Walker_Rig:BallGuy" "attributeAliasList" " -type \"attributeAlias\" Ultimate_Walker_Rig:OffsetRotateControl1_rotateZ"
 		
-		"Ultimate_Walker_RigRN" 323
+		"Ultimate_Walker_RigRN" 330
 		2 "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:CTRL_Root" "translate" 
 		" -type \"double3\" 0 0 0"
 		2 "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:CTRL_Root" "translateX" 
@@ -252,28 +301,8 @@ createNode reference -n "Ultimate_Walker_RigRN";
 		"ikFkBlend" " -k 1"
 		2 "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_foot_ctrl|Ultimate_Walker_Rig:walker_lf_foot_ctrl_parentConstraint1" 
 		"rotationDecompositionTarget" " -type \"double3\" 0 0 0"
-		2 "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_knee_pv_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_legPvCtrlGrp_space_grp|Ultimate_Walker_Rig:walker_lf_knee_pv_ctrl" 
-		"lfLegIkCtrl" " -k 1"
-		2 "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl" 
-		"pvControl" " -k 1"
-		2 "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl" 
-		"footRoll" " -k 1"
-		2 "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl" 
-		"footBreak" " -k 1"
-		2 "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl" 
-		"toeRoll" " -k 1"
-		2 "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl" 
-		"legTwist" " -k 1"
-		2 "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl" 
-		"heelTwist" " -k 1"
-		2 "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl" 
-		"ballTwist" " -k 1"
-		2 "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl" 
-		"toeTwist" " -k 1"
 		2 "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_foot_ctrl" 
 		"ikFkBlend" " -k 1"
-		2 "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_knee_pv_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_legPvCtrlGrp_space_grp|Ultimate_Walker_Rig:walker_rt_knee_pv_ctrl" 
-		"rtLegIkCtrl" " -k 1"
 		2 "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Mesh_Grp|Ultimate_Walker_Rig:leg_binded_grp|Ultimate_Walker_Rig:R_leg_Grp|Ultimate_Walker_Rig:R_upperleg|Ultimate_Walker_Rig:R_upperlegShape" 
 		"ghosting" " 0"
 		2 "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Mesh_Grp|Ultimate_Walker_Rig:leg_binded_grp|Ultimate_Walker_Rig:R_leg_Grp|Ultimate_Walker_Rig:R_upperleg|Ultimate_Walker_Rig:R_upperlegShape" 
@@ -731,176 +760,260 @@ createNode reference -n "Ultimate_Walker_RigRN";
 		"ghostColorPost" " -type \"float3\" 0.87800001999999999 0.67799997000000001 0.66299998999999998"
 		
 		2 "Ultimate_Walker_Rig:L_Objects" "displayType" " 2"
-		2 "Ultimate_Walker_Rig:BallGuy" "uv[1:20]" " -s 20 1 1 1 1 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0"
+		2 "Ultimate_Walker_Rig:BallGuy" "uv[1:20]" " -s 20 1 1 1 1 1 0 0 0 0 0 0 0 1 1 0 0 0 1 0 0"
 		
-		2 "Ultimate_Walker_Rig:BallGuy" "unitlessValues" " -s 4"
-		2 "Ultimate_Walker_Rig:BallGuy" "lv[1:13]" " -s 13 0 0 0 0 0 0 0 0 0 0 0 0 0"
+		2 "Ultimate_Walker_Rig:BallGuy" "unitlessValues" " -s 14"
+		2 "Ultimate_Walker_Rig:BallGuy" "lv[1:13]" " -s 13 0 0 0 0 0.82618648421469132 0 0 0 0 0 0 0 0"
 		
-		2 "Ultimate_Walker_Rig:BallGuy" "linearValues" " -s 3"
-		2 "Ultimate_Walker_Rig:BallGuy" "av[1:6]" " -s 6 0 0 0 0 0 0"
-		2 "Ultimate_Walker_Rig:BallGuy" "angularValues" " -s 3"
-		2 "Ultimate_Walker_Rig:BallGuy" "animationMapping" " -type \"characterMapping\" 10 \"Ultimate_Walker_Rig:OffsetRotateControl1.scaleZ\" 0 1 \"Ultimate_Walker_Rig:OffsetRotateControl1.scaleY\" 0 2 \"Ultimate_Walker_Rig:OffsetRotateControl1.scaleX\" 0 3 \"Ultimate_Walker_Rig:OffsetRotateControl1.rotateZ\" 2 1 \"Ultimate_Walker_Rig:OffsetRotateControl1.rotateY\" 2 2 \"Ultimate_Walker_Rig:OffsetRotateControl1.rotateX\" 2 3 \"Ultimate_Walker_Rig:OffsetRotateControl1.translateZ\" 1 1 \"Ultimate_Walker_Rig:OffsetRotateControl1.translateY\" 1 2 \"Ultimate_Walker_Rig:OffsetRotateControl1.translateX\" 1 3 \"Ultimate_Walker_Rig:OffsetRotateControl1.visibility\" 0 4"
+		2 "Ultimate_Walker_Rig:BallGuy" "linearValues" " -s 6"
+		2 "Ultimate_Walker_Rig:BallGuy" "av[1:6]" " -s 6 0 0 0 0 0 -9.30788418819914298"
 		
+		2 "Ultimate_Walker_Rig:BallGuy" "angularValues" " -s 6"
+		2 "Ultimate_Walker_Rig:BallGuy" "animationMapping" (" -type \"characterMapping\" 26 \"Ultimate_Walker_Rig:OffsetRotateControl1.scaleZ\" 0 1 \"Ultimate_Walker_Rig:OffsetRotateControl1.scaleY\" 0 2 \"Ultimate_Walker_Rig:OffsetRotateControl1.scaleX\" 0 3 \"Ultimate_Walker_Rig:OffsetRotateControl1.rotateZ\" 2 1 \"Ultimate_Walker_Rig:OffsetRotateControl1.rotateY\" 2 2 \"Ultimate_Walker_Rig:OffsetRotateControl1.rotateX\" 2 3 \"Ultimate_Walker_Rig:OffsetRotateControl1.translateZ\" 1 1 \"Ultimate_Walker_Rig:OffsetRotateControl1.translateY\" 1 2 \"Ultimate_Walker_Rig:OffsetRotateControl1.translateX\" 1 3 \"Ultimate_Walker_Rig:OffsetRotateControl1.visibility\" 0 4 \"Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.pvControl\" 0 5 \"Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.legTwist\" 0 6 \"Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.heelTwist\" 0 7 \"Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.ballTwist\" 0 8 \"Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.toeTwist\" 0 9 \"Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.footRoll\" 0 10 \"Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.footBreak\" 0 11 \"Ultimate_Walker_Rig:wal"
+		+ "ker_lf_heel_ik_ctrl.toeRoll\" 0 12 \"Ultimate_Walker_Rig:walker_rt_foot_ctrl.ikFkBlend\" 0 13 \"Ultimate_Walker_Rig:walker_lf_foot_ctrl.ikFkBlend\" 0 14 \"Ultimate_Walker_Rig:CTRL_Main.translateZ\" 1 4 \"Ultimate_Walker_Rig:CTRL_Main.translateY\" 1 5 \"Ultimate_Walker_Rig:CTRL_Main.translateX\" 1 6 \"Ultimate_Walker_Rig:CTRL_Main.rotateZ\" 2 4 \"Ultimate_Walker_Rig:CTRL_Main.rotateY\" 2 5 \"Ultimate_Walker_Rig:CTRL_Main.rotateX\" 2 6"
+		)
 		2 "Ultimate_Walker_Rig:BallGuy" "referenceMapping" " -type \"characterMapping\" 10 \"Ultimate_Walker_Rig:OffsetRotateControl1.scaleZ\" 0 1 \"Ultimate_Walker_Rig:OffsetRotateControl1.scaleY\" 0 2 \"Ultimate_Walker_Rig:OffsetRotateControl1.scaleX\" 0 3 \"Ultimate_Walker_Rig:OffsetRotateControl1.rotateZ\" 2 1 \"Ultimate_Walker_Rig:OffsetRotateControl1.rotateY\" 2 2 \"Ultimate_Walker_Rig:OffsetRotateControl1.rotateX\" 2 3 \"Ultimate_Walker_Rig:OffsetRotateControl1.translateZ\" 1 1 \"Ultimate_Walker_Rig:OffsetRotateControl1.translateY\" 1 2 \"Ultimate_Walker_Rig:OffsetRotateControl1.translateX\" 1 3 \"Ultimate_Walker_Rig:OffsetRotateControl1.visibility\" 0 4"
 		
-		2 "Ultimate_Walker_Rig:BallGuy" "clipIndexMap" " -type \"Int32Array\" 10 0 1 2 3 4 5 6 7 8 9"
+		2 "Ultimate_Walker_Rig:BallGuy" "clipIndexMap" " -type \"Int32Array\" 26 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25"
 		
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.pvControl" 
-		"Ultimate_Walker_RigRN.placeHolderList[1]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.legTwist" 
-		"Ultimate_Walker_RigRN.placeHolderList[2]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.heelTwist" 
-		"Ultimate_Walker_RigRN.placeHolderList[3]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.ballTwist" 
-		"Ultimate_Walker_RigRN.placeHolderList[4]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.toeTwist" 
-		"Ultimate_Walker_RigRN.placeHolderList[5]" ""
+		2 "Ultimate_Walker_Rig:BallGuy" "attributeAliasList" " -type \"attributeAlias\" walker_lf_heel_ik_ctrl_rotateZ"
+		
+		5 0 "Ultimate_Walker_RigRN" "Ultimate_Walker_Rig:BallGuy.unitlessValues[5]" 
+		"|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.pvControl" 
+		"Ultimate_Walker_RigRN.placeHolderList[1]" "Ultimate_Walker_RigRN.placeHolderList[2]" 
+		""
+		5 0 "Ultimate_Walker_RigRN" "Ultimate_Walker_Rig:BallGuy.unitlessValues[6]" 
+		"|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.legTwist" 
+		"Ultimate_Walker_RigRN.placeHolderList[3]" "Ultimate_Walker_RigRN.placeHolderList[4]" 
+		""
+		5 0 "Ultimate_Walker_RigRN" "Ultimate_Walker_Rig:BallGuy.unitlessValues[7]" 
+		"|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.heelTwist" 
+		"Ultimate_Walker_RigRN.placeHolderList[5]" "Ultimate_Walker_RigRN.placeHolderList[6]" 
+		""
+		5 0 "Ultimate_Walker_RigRN" "Ultimate_Walker_Rig:BallGuy.unitlessValues[8]" 
+		"|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.ballTwist" 
+		"Ultimate_Walker_RigRN.placeHolderList[7]" "Ultimate_Walker_RigRN.placeHolderList[8]" 
+		""
+		5 0 "Ultimate_Walker_RigRN" "Ultimate_Walker_Rig:BallGuy.unitlessValues[9]" 
+		"|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.toeTwist" 
+		"Ultimate_Walker_RigRN.placeHolderList[9]" "Ultimate_Walker_RigRN.placeHolderList[10]" 
+		""
 		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.translateZ" 
-		"Ultimate_Walker_RigRN.placeHolderList[6]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.translateY" 
-		"Ultimate_Walker_RigRN.placeHolderList[7]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.translateX" 
-		"Ultimate_Walker_RigRN.placeHolderList[8]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.rotateZ" 
-		"Ultimate_Walker_RigRN.placeHolderList[9]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.rotateY" 
-		"Ultimate_Walker_RigRN.placeHolderList[10]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.rotateX" 
 		"Ultimate_Walker_RigRN.placeHolderList[11]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.footRoll" 
+		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.translateY" 
 		"Ultimate_Walker_RigRN.placeHolderList[12]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.footBreak" 
+		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.translateX" 
 		"Ultimate_Walker_RigRN.placeHolderList[13]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.toeRoll" 
+		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.rotateZ" 
 		"Ultimate_Walker_RigRN.placeHolderList[14]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_foot_ctrl.ikFkBlend" 
+		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.rotateY" 
 		"Ultimate_Walker_RigRN.placeHolderList[15]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_knee_pv_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_legPvCtrlGrp_space_grp|Ultimate_Walker_Rig:walker_lf_knee_pv_ctrl.translateZ" 
+		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.rotateX" 
 		"Ultimate_Walker_RigRN.placeHolderList[16]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_knee_pv_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_legPvCtrlGrp_space_grp|Ultimate_Walker_Rig:walker_lf_knee_pv_ctrl.translateY" 
-		"Ultimate_Walker_RigRN.placeHolderList[17]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_knee_pv_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_legPvCtrlGrp_space_grp|Ultimate_Walker_Rig:walker_lf_knee_pv_ctrl.translateX" 
-		"Ultimate_Walker_RigRN.placeHolderList[18]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_knee_pv_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_legPvCtrlGrp_space_grp|Ultimate_Walker_Rig:walker_lf_knee_pv_ctrl.lfLegIkCtrl" 
-		"Ultimate_Walker_RigRN.placeHolderList[19]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl.pvControl" 
-		"Ultimate_Walker_RigRN.placeHolderList[20]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl.legTwist" 
-		"Ultimate_Walker_RigRN.placeHolderList[21]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl.heelTwist" 
-		"Ultimate_Walker_RigRN.placeHolderList[22]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl.ballTwist" 
-		"Ultimate_Walker_RigRN.placeHolderList[23]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl.toeTwist" 
-		"Ultimate_Walker_RigRN.placeHolderList[24]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl.translateZ" 
+		5 0 "Ultimate_Walker_RigRN" "Ultimate_Walker_Rig:BallGuy.unitlessValues[10]" 
+		"|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.footRoll" 
+		"Ultimate_Walker_RigRN.placeHolderList[17]" "Ultimate_Walker_RigRN.placeHolderList[18]" 
+		""
+		5 0 "Ultimate_Walker_RigRN" "Ultimate_Walker_Rig:BallGuy.unitlessValues[11]" 
+		"|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.footBreak" 
+		"Ultimate_Walker_RigRN.placeHolderList[19]" "Ultimate_Walker_RigRN.placeHolderList[20]" 
+		""
+		5 0 "Ultimate_Walker_RigRN" "Ultimate_Walker_Rig:BallGuy.unitlessValues[12]" 
+		"|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.toeRoll" 
+		"Ultimate_Walker_RigRN.placeHolderList[21]" "Ultimate_Walker_RigRN.placeHolderList[22]" 
+		""
+		5 0 "Ultimate_Walker_RigRN" "Ultimate_Walker_Rig:BallGuy.unitlessValues[14]" 
+		"|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_foot_ctrl.ikFkBlend" 
+		"Ultimate_Walker_RigRN.placeHolderList[23]" "Ultimate_Walker_RigRN.placeHolderList[24]" 
+		""
+		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_knee_pv_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_legPvCtrlGrp_space_grp|Ultimate_Walker_Rig:walker_lf_knee_pv_ctrl.translateZ" 
 		"Ultimate_Walker_RigRN.placeHolderList[25]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl.translateY" 
+		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_knee_pv_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_legPvCtrlGrp_space_grp|Ultimate_Walker_Rig:walker_lf_knee_pv_ctrl.translateY" 
 		"Ultimate_Walker_RigRN.placeHolderList[26]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl.translateX" 
+		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_knee_pv_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_legPvCtrlGrp_space_grp|Ultimate_Walker_Rig:walker_lf_knee_pv_ctrl.translateX" 
 		"Ultimate_Walker_RigRN.placeHolderList[27]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl.rotateZ" 
+		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_knee_pv_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_legPvCtrlGrp_space_grp|Ultimate_Walker_Rig:walker_lf_knee_pv_ctrl.lfLegIkCtrl" 
 		"Ultimate_Walker_RigRN.placeHolderList[28]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl.rotateY" 
+		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl.pvControl" 
 		"Ultimate_Walker_RigRN.placeHolderList[29]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl.rotateX" 
+		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl.legTwist" 
 		"Ultimate_Walker_RigRN.placeHolderList[30]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl.footRoll" 
+		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl.heelTwist" 
 		"Ultimate_Walker_RigRN.placeHolderList[31]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl.footBreak" 
+		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl.ballTwist" 
 		"Ultimate_Walker_RigRN.placeHolderList[32]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl.toeRoll" 
+		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl.toeTwist" 
 		"Ultimate_Walker_RigRN.placeHolderList[33]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_foot_ctrl.ikFkBlend" 
+		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl.translateZ" 
 		"Ultimate_Walker_RigRN.placeHolderList[34]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_knee_pv_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_legPvCtrlGrp_space_grp|Ultimate_Walker_Rig:walker_rt_knee_pv_ctrl.translateZ" 
+		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl.translateY" 
 		"Ultimate_Walker_RigRN.placeHolderList[35]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_knee_pv_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_legPvCtrlGrp_space_grp|Ultimate_Walker_Rig:walker_rt_knee_pv_ctrl.translateY" 
+		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl.translateX" 
 		"Ultimate_Walker_RigRN.placeHolderList[36]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_knee_pv_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_legPvCtrlGrp_space_grp|Ultimate_Walker_Rig:walker_rt_knee_pv_ctrl.translateX" 
+		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl.rotateZ" 
 		"Ultimate_Walker_RigRN.placeHolderList[37]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_knee_pv_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_legPvCtrlGrp_space_grp|Ultimate_Walker_Rig:walker_rt_knee_pv_ctrl.rtLegIkCtrl" 
+		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl.rotateY" 
 		"Ultimate_Walker_RigRN.placeHolderList[38]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Body_Rig_Grp|Ultimate_Walker_Rig:CNT_Grp|Ultimate_Walker_Rig:CTRL_Top_Grp|Ultimate_Walker_Rig:CTRL_Top.translateY" 
+		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl.rotateX" 
 		"Ultimate_Walker_RigRN.placeHolderList[39]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Body_Rig_Grp|Ultimate_Walker_Rig:CNT_Grp|Ultimate_Walker_Rig:CTRL_Main_Grp|Ultimate_Walker_Rig:CTRL_Main.translateZ" 
+		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl.footRoll" 
 		"Ultimate_Walker_RigRN.placeHolderList[40]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Body_Rig_Grp|Ultimate_Walker_Rig:CNT_Grp|Ultimate_Walker_Rig:CTRL_Main_Grp|Ultimate_Walker_Rig:CTRL_Main.translateY" 
+		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl.footBreak" 
 		"Ultimate_Walker_RigRN.placeHolderList[41]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Body_Rig_Grp|Ultimate_Walker_Rig:CNT_Grp|Ultimate_Walker_Rig:CTRL_Main_Grp|Ultimate_Walker_Rig:CTRL_Main.translateX" 
+		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_heel_ik_ctrl.toeRoll" 
 		"Ultimate_Walker_RigRN.placeHolderList[42]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Body_Rig_Grp|Ultimate_Walker_Rig:CNT_Grp|Ultimate_Walker_Rig:CTRL_Main_Grp|Ultimate_Walker_Rig:CTRL_Main.rotateZ" 
-		"Ultimate_Walker_RigRN.placeHolderList[43]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Body_Rig_Grp|Ultimate_Walker_Rig:CNT_Grp|Ultimate_Walker_Rig:CTRL_Main_Grp|Ultimate_Walker_Rig:CTRL_Main.rotateY" 
-		"Ultimate_Walker_RigRN.placeHolderList[44]" ""
-		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Body_Rig_Grp|Ultimate_Walker_Rig:CNT_Grp|Ultimate_Walker_Rig:CTRL_Main_Grp|Ultimate_Walker_Rig:CTRL_Main.rotateX" 
+		5 0 "Ultimate_Walker_RigRN" "Ultimate_Walker_Rig:BallGuy.unitlessValues[13]" 
+		"|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_foot_ctrl.ikFkBlend" 
+		"Ultimate_Walker_RigRN.placeHolderList[43]" "Ultimate_Walker_RigRN.placeHolderList[44]" 
+		""
+		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_knee_pv_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_legPvCtrlGrp_space_grp|Ultimate_Walker_Rig:walker_rt_knee_pv_ctrl.translateZ" 
 		"Ultimate_Walker_RigRN.placeHolderList[45]" ""
-		5 0 "Ultimate_Walker_RigRN" "Ultimate_Walker_Rig:BallGuy.angularValues[3]" 
-		"|Ultimate_Walker_Rig:OffsetRotateControl1.rotateX" "Ultimate_Walker_RigRN.placeHolderList[46]" 
+		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_knee_pv_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_legPvCtrlGrp_space_grp|Ultimate_Walker_Rig:walker_rt_knee_pv_ctrl.translateY" 
+		"Ultimate_Walker_RigRN.placeHolderList[46]" ""
+		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_knee_pv_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_legPvCtrlGrp_space_grp|Ultimate_Walker_Rig:walker_rt_knee_pv_ctrl.translateX" 
 		"Ultimate_Walker_RigRN.placeHolderList[47]" ""
-		5 0 "Ultimate_Walker_RigRN" "Ultimate_Walker_Rig:BallGuy.angularValues[2]" 
-		"|Ultimate_Walker_Rig:OffsetRotateControl1.rotateY" "Ultimate_Walker_RigRN.placeHolderList[48]" 
+		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_knee_pv_ctrl_frzGrp|Ultimate_Walker_Rig:walker_rt_legPvCtrlGrp_space_grp|Ultimate_Walker_Rig:walker_rt_knee_pv_ctrl.rtLegIkCtrl" 
+		"Ultimate_Walker_RigRN.placeHolderList[48]" ""
+		5 4 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Body_Rig_Grp|Ultimate_Walker_Rig:CNT_Grp|Ultimate_Walker_Rig:CTRL_Top_Grp|Ultimate_Walker_Rig:CTRL_Top.translateY" 
 		"Ultimate_Walker_RigRN.placeHolderList[49]" ""
-		5 0 "Ultimate_Walker_RigRN" "Ultimate_Walker_Rig:BallGuy.angularValues[1]" 
-		"|Ultimate_Walker_Rig:OffsetRotateControl1.rotateZ" "Ultimate_Walker_RigRN.placeHolderList[50]" 
-		"Ultimate_Walker_RigRN.placeHolderList[51]" ""
-		5 0 "Ultimate_Walker_RigRN" "Ultimate_Walker_Rig:BallGuy.linearValues[3]" 
-		"|Ultimate_Walker_Rig:OffsetRotateControl1.translateX" "Ultimate_Walker_RigRN.placeHolderList[52]" 
-		"Ultimate_Walker_RigRN.placeHolderList[53]" ""
-		5 0 "Ultimate_Walker_RigRN" "Ultimate_Walker_Rig:BallGuy.linearValues[2]" 
-		"|Ultimate_Walker_Rig:OffsetRotateControl1.translateY" "Ultimate_Walker_RigRN.placeHolderList[54]" 
-		"Ultimate_Walker_RigRN.placeHolderList[55]" ""
-		5 0 "Ultimate_Walker_RigRN" "Ultimate_Walker_Rig:BallGuy.linearValues[1]" 
-		"|Ultimate_Walker_Rig:OffsetRotateControl1.translateZ" "Ultimate_Walker_RigRN.placeHolderList[56]" 
-		"Ultimate_Walker_RigRN.placeHolderList[57]" ""
-		5 0 "Ultimate_Walker_RigRN" "Ultimate_Walker_Rig:BallGuy.unitlessValues[3]" 
-		"|Ultimate_Walker_Rig:OffsetRotateControl1.scaleX" "Ultimate_Walker_RigRN.placeHolderList[58]" 
-		"Ultimate_Walker_RigRN.placeHolderList[59]" ""
-		5 0 "Ultimate_Walker_RigRN" "Ultimate_Walker_Rig:BallGuy.unitlessValues[2]" 
-		"|Ultimate_Walker_Rig:OffsetRotateControl1.scaleY" "Ultimate_Walker_RigRN.placeHolderList[60]" 
-		"Ultimate_Walker_RigRN.placeHolderList[61]" ""
-		5 0 "Ultimate_Walker_RigRN" "Ultimate_Walker_Rig:BallGuy.unitlessValues[1]" 
-		"|Ultimate_Walker_Rig:OffsetRotateControl1.scaleZ" "Ultimate_Walker_RigRN.placeHolderList[62]" 
+		5 0 "Ultimate_Walker_RigRN" "Ultimate_Walker_Rig:BallGuy.linearValues[4]" 
+		"|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Body_Rig_Grp|Ultimate_Walker_Rig:CNT_Grp|Ultimate_Walker_Rig:CTRL_Main_Grp|Ultimate_Walker_Rig:CTRL_Main.translateZ" 
+		"Ultimate_Walker_RigRN.placeHolderList[50]" "Ultimate_Walker_RigRN.placeHolderList[51]" 
+		""
+		5 0 "Ultimate_Walker_RigRN" "Ultimate_Walker_Rig:BallGuy.linearValues[5]" 
+		"|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Body_Rig_Grp|Ultimate_Walker_Rig:CNT_Grp|Ultimate_Walker_Rig:CTRL_Main_Grp|Ultimate_Walker_Rig:CTRL_Main.translateY" 
+		"Ultimate_Walker_RigRN.placeHolderList[52]" "Ultimate_Walker_RigRN.placeHolderList[53]" 
+		""
+		5 0 "Ultimate_Walker_RigRN" "Ultimate_Walker_Rig:BallGuy.linearValues[6]" 
+		"|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Body_Rig_Grp|Ultimate_Walker_Rig:CNT_Grp|Ultimate_Walker_Rig:CTRL_Main_Grp|Ultimate_Walker_Rig:CTRL_Main.translateX" 
+		"Ultimate_Walker_RigRN.placeHolderList[54]" "Ultimate_Walker_RigRN.placeHolderList[55]" 
+		""
+		5 0 "Ultimate_Walker_RigRN" "Ultimate_Walker_Rig:BallGuy.angularValues[4]" 
+		"|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Body_Rig_Grp|Ultimate_Walker_Rig:CNT_Grp|Ultimate_Walker_Rig:CTRL_Main_Grp|Ultimate_Walker_Rig:CTRL_Main.rotateZ" 
+		"Ultimate_Walker_RigRN.placeHolderList[56]" "Ultimate_Walker_RigRN.placeHolderList[57]" 
+		""
+		5 0 "Ultimate_Walker_RigRN" "Ultimate_Walker_Rig:BallGuy.angularValues[5]" 
+		"|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Body_Rig_Grp|Ultimate_Walker_Rig:CNT_Grp|Ultimate_Walker_Rig:CTRL_Main_Grp|Ultimate_Walker_Rig:CTRL_Main.rotateY" 
+		"Ultimate_Walker_RigRN.placeHolderList[58]" "Ultimate_Walker_RigRN.placeHolderList[59]" 
+		""
+		5 0 "Ultimate_Walker_RigRN" "Ultimate_Walker_Rig:BallGuy.angularValues[6]" 
+		"|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Body_Rig_Grp|Ultimate_Walker_Rig:CNT_Grp|Ultimate_Walker_Rig:CTRL_Main_Grp|Ultimate_Walker_Rig:CTRL_Main.rotateX" 
+		"Ultimate_Walker_RigRN.placeHolderList[60]" "Ultimate_Walker_RigRN.placeHolderList[61]" 
+		""
+		5 0 "Ultimate_Walker_RigRN" "Ultimate_Walker_Rig:BallGuy.angularValues[3]" 
+		"|Ultimate_Walker_Rig:OffsetRotateControl1.rotateX" "Ultimate_Walker_RigRN.placeHolderList[62]" 
 		"Ultimate_Walker_RigRN.placeHolderList[63]" ""
-		5 0 "Ultimate_Walker_RigRN" "Ultimate_Walker_Rig:BallGuy.unitlessValues[4]" 
-		"|Ultimate_Walker_Rig:OffsetRotateControl1.visibility" "Ultimate_Walker_RigRN.placeHolderList[64]" 
+		5 0 "Ultimate_Walker_RigRN" "Ultimate_Walker_Rig:BallGuy.angularValues[2]" 
+		"|Ultimate_Walker_Rig:OffsetRotateControl1.rotateY" "Ultimate_Walker_RigRN.placeHolderList[64]" 
 		"Ultimate_Walker_RigRN.placeHolderList[65]" ""
-		5 0 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:OffsetRotateControl1.scaleZ" 
-		"Ultimate_Walker_Rig:BallGuy.dnSetMembers[0]" "Ultimate_Walker_RigRN.placeHolderList[66]" 
+		5 0 "Ultimate_Walker_RigRN" "Ultimate_Walker_Rig:BallGuy.angularValues[1]" 
+		"|Ultimate_Walker_Rig:OffsetRotateControl1.rotateZ" "Ultimate_Walker_RigRN.placeHolderList[66]" 
 		"Ultimate_Walker_RigRN.placeHolderList[67]" ""
-		5 0 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:OffsetRotateControl1.scaleY" 
-		"Ultimate_Walker_Rig:BallGuy.dnSetMembers[1]" "Ultimate_Walker_RigRN.placeHolderList[68]" 
+		5 0 "Ultimate_Walker_RigRN" "Ultimate_Walker_Rig:BallGuy.linearValues[3]" 
+		"|Ultimate_Walker_Rig:OffsetRotateControl1.translateX" "Ultimate_Walker_RigRN.placeHolderList[68]" 
 		"Ultimate_Walker_RigRN.placeHolderList[69]" ""
-		5 0 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:OffsetRotateControl1.scaleX" 
-		"Ultimate_Walker_Rig:BallGuy.dnSetMembers[2]" "Ultimate_Walker_RigRN.placeHolderList[70]" 
+		5 0 "Ultimate_Walker_RigRN" "Ultimate_Walker_Rig:BallGuy.linearValues[2]" 
+		"|Ultimate_Walker_Rig:OffsetRotateControl1.translateY" "Ultimate_Walker_RigRN.placeHolderList[70]" 
 		"Ultimate_Walker_RigRN.placeHolderList[71]" ""
-		5 0 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:OffsetRotateControl1.rotateZ" 
-		"Ultimate_Walker_Rig:BallGuy.dnSetMembers[3]" "Ultimate_Walker_RigRN.placeHolderList[72]" 
+		5 0 "Ultimate_Walker_RigRN" "Ultimate_Walker_Rig:BallGuy.linearValues[1]" 
+		"|Ultimate_Walker_Rig:OffsetRotateControl1.translateZ" "Ultimate_Walker_RigRN.placeHolderList[72]" 
 		"Ultimate_Walker_RigRN.placeHolderList[73]" ""
-		5 0 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:OffsetRotateControl1.rotateY" 
-		"Ultimate_Walker_Rig:BallGuy.dnSetMembers[4]" "Ultimate_Walker_RigRN.placeHolderList[74]" 
+		5 0 "Ultimate_Walker_RigRN" "Ultimate_Walker_Rig:BallGuy.unitlessValues[3]" 
+		"|Ultimate_Walker_Rig:OffsetRotateControl1.scaleX" "Ultimate_Walker_RigRN.placeHolderList[74]" 
 		"Ultimate_Walker_RigRN.placeHolderList[75]" ""
-		5 0 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:OffsetRotateControl1.rotateX" 
-		"Ultimate_Walker_Rig:BallGuy.dnSetMembers[5]" "Ultimate_Walker_RigRN.placeHolderList[76]" 
+		5 0 "Ultimate_Walker_RigRN" "Ultimate_Walker_Rig:BallGuy.unitlessValues[2]" 
+		"|Ultimate_Walker_Rig:OffsetRotateControl1.scaleY" "Ultimate_Walker_RigRN.placeHolderList[76]" 
 		"Ultimate_Walker_RigRN.placeHolderList[77]" ""
-		5 0 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:OffsetRotateControl1.translateZ" 
-		"Ultimate_Walker_Rig:BallGuy.dnSetMembers[6]" "Ultimate_Walker_RigRN.placeHolderList[78]" 
+		5 0 "Ultimate_Walker_RigRN" "Ultimate_Walker_Rig:BallGuy.unitlessValues[1]" 
+		"|Ultimate_Walker_Rig:OffsetRotateControl1.scaleZ" "Ultimate_Walker_RigRN.placeHolderList[78]" 
 		"Ultimate_Walker_RigRN.placeHolderList[79]" ""
-		5 0 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:OffsetRotateControl1.translateY" 
-		"Ultimate_Walker_Rig:BallGuy.dnSetMembers[7]" "Ultimate_Walker_RigRN.placeHolderList[80]" 
+		5 0 "Ultimate_Walker_RigRN" "Ultimate_Walker_Rig:BallGuy.unitlessValues[4]" 
+		"|Ultimate_Walker_Rig:OffsetRotateControl1.visibility" "Ultimate_Walker_RigRN.placeHolderList[80]" 
 		"Ultimate_Walker_RigRN.placeHolderList[81]" ""
-		5 0 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:OffsetRotateControl1.translateX" 
-		"Ultimate_Walker_Rig:BallGuy.dnSetMembers[8]" "Ultimate_Walker_RigRN.placeHolderList[82]" 
+		5 0 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:OffsetRotateControl1.scaleZ" 
+		"Ultimate_Walker_Rig:BallGuy.dnSetMembers[0]" "Ultimate_Walker_RigRN.placeHolderList[82]" 
 		"Ultimate_Walker_RigRN.placeHolderList[83]" ""
-		5 0 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:OffsetRotateControl1.visibility" 
-		"Ultimate_Walker_Rig:BallGuy.dnSetMembers[9]" "Ultimate_Walker_RigRN.placeHolderList[84]" 
+		5 0 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:OffsetRotateControl1.scaleY" 
+		"Ultimate_Walker_Rig:BallGuy.dnSetMembers[1]" "Ultimate_Walker_RigRN.placeHolderList[84]" 
 		"Ultimate_Walker_RigRN.placeHolderList[85]" ""
-		5 3 "Ultimate_Walker_RigRN" "Ultimate_Walker_Rig:BallGuy.animationMapping" 
-		"Ultimate_Walker_RigRN.placeHolderList[86]" ""
-		5 4 "Ultimate_Walker_RigRN" "Ultimate_Walker_Rig:BallGuy.clipEvaluate_Raw" 
+		5 0 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:OffsetRotateControl1.scaleX" 
+		"Ultimate_Walker_Rig:BallGuy.dnSetMembers[2]" "Ultimate_Walker_RigRN.placeHolderList[86]" 
 		"Ultimate_Walker_RigRN.placeHolderList[87]" ""
+		5 0 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:OffsetRotateControl1.rotateZ" 
+		"Ultimate_Walker_Rig:BallGuy.dnSetMembers[3]" "Ultimate_Walker_RigRN.placeHolderList[88]" 
+		"Ultimate_Walker_RigRN.placeHolderList[89]" ""
+		5 0 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:OffsetRotateControl1.rotateY" 
+		"Ultimate_Walker_Rig:BallGuy.dnSetMembers[4]" "Ultimate_Walker_RigRN.placeHolderList[90]" 
+		"Ultimate_Walker_RigRN.placeHolderList[91]" ""
+		5 0 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:OffsetRotateControl1.rotateX" 
+		"Ultimate_Walker_Rig:BallGuy.dnSetMembers[5]" "Ultimate_Walker_RigRN.placeHolderList[92]" 
+		"Ultimate_Walker_RigRN.placeHolderList[93]" ""
+		5 0 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:OffsetRotateControl1.translateZ" 
+		"Ultimate_Walker_Rig:BallGuy.dnSetMembers[6]" "Ultimate_Walker_RigRN.placeHolderList[94]" 
+		"Ultimate_Walker_RigRN.placeHolderList[95]" ""
+		5 0 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:OffsetRotateControl1.translateY" 
+		"Ultimate_Walker_Rig:BallGuy.dnSetMembers[7]" "Ultimate_Walker_RigRN.placeHolderList[96]" 
+		"Ultimate_Walker_RigRN.placeHolderList[97]" ""
+		5 0 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:OffsetRotateControl1.translateX" 
+		"Ultimate_Walker_Rig:BallGuy.dnSetMembers[8]" "Ultimate_Walker_RigRN.placeHolderList[98]" 
+		"Ultimate_Walker_RigRN.placeHolderList[99]" ""
+		5 0 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:OffsetRotateControl1.visibility" 
+		"Ultimate_Walker_Rig:BallGuy.dnSetMembers[9]" "Ultimate_Walker_RigRN.placeHolderList[100]" 
+		"Ultimate_Walker_RigRN.placeHolderList[101]" ""
+		5 0 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.pvControl" 
+		"Ultimate_Walker_Rig:BallGuy.dnSetMembers[39]" "Ultimate_Walker_RigRN.placeHolderList[102]" 
+		"Ultimate_Walker_RigRN.placeHolderList[103]" ""
+		5 0 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.legTwist" 
+		"Ultimate_Walker_Rig:BallGuy.dnSetMembers[40]" "Ultimate_Walker_RigRN.placeHolderList[104]" 
+		"Ultimate_Walker_RigRN.placeHolderList[105]" ""
+		5 0 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.heelTwist" 
+		"Ultimate_Walker_Rig:BallGuy.dnSetMembers[41]" "Ultimate_Walker_RigRN.placeHolderList[106]" 
+		"Ultimate_Walker_RigRN.placeHolderList[107]" ""
+		5 0 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.ballTwist" 
+		"Ultimate_Walker_Rig:BallGuy.dnSetMembers[42]" "Ultimate_Walker_RigRN.placeHolderList[108]" 
+		"Ultimate_Walker_RigRN.placeHolderList[109]" ""
+		5 0 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.toeTwist" 
+		"Ultimate_Walker_Rig:BallGuy.dnSetMembers[43]" "Ultimate_Walker_RigRN.placeHolderList[110]" 
+		"Ultimate_Walker_RigRN.placeHolderList[111]" ""
+		5 0 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.footRoll" 
+		"Ultimate_Walker_Rig:BallGuy.dnSetMembers[44]" "Ultimate_Walker_RigRN.placeHolderList[112]" 
+		"Ultimate_Walker_RigRN.placeHolderList[113]" ""
+		5 0 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.footBreak" 
+		"Ultimate_Walker_Rig:BallGuy.dnSetMembers[45]" "Ultimate_Walker_RigRN.placeHolderList[114]" 
+		"Ultimate_Walker_RigRN.placeHolderList[115]" ""
+		5 0 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl_frzGrp|Ultimate_Walker_Rig:walker_lf_heel_ik_ctrl.toeRoll" 
+		"Ultimate_Walker_Rig:BallGuy.dnSetMembers[46]" "Ultimate_Walker_RigRN.placeHolderList[116]" 
+		"Ultimate_Walker_RigRN.placeHolderList[117]" ""
+		5 0 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_rt_leg_rig_grp|Ultimate_Walker_Rig:walker_rt_foot_ctrl.ikFkBlend" 
+		"Ultimate_Walker_Rig:BallGuy.dnSetMembers[47]" "Ultimate_Walker_RigRN.placeHolderList[118]" 
+		"Ultimate_Walker_RigRN.placeHolderList[119]" ""
+		5 0 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Rig_Leg_grp|Ultimate_Walker_Rig:walker_lf_leg_rig_grp|Ultimate_Walker_Rig:walker_lf_foot_ctrl.ikFkBlend" 
+		"Ultimate_Walker_Rig:BallGuy.dnSetMembers[48]" "Ultimate_Walker_RigRN.placeHolderList[120]" 
+		"Ultimate_Walker_RigRN.placeHolderList[121]" ""
+		5 0 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Body_Rig_Grp|Ultimate_Walker_Rig:CNT_Grp|Ultimate_Walker_Rig:CTRL_Main_Grp|Ultimate_Walker_Rig:CTRL_Main.translateZ" 
+		"Ultimate_Walker_Rig:BallGuy.dnSetMembers[49]" "Ultimate_Walker_RigRN.placeHolderList[122]" 
+		"Ultimate_Walker_RigRN.placeHolderList[123]" ""
+		5 0 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Body_Rig_Grp|Ultimate_Walker_Rig:CNT_Grp|Ultimate_Walker_Rig:CTRL_Main_Grp|Ultimate_Walker_Rig:CTRL_Main.translateY" 
+		"Ultimate_Walker_Rig:BallGuy.dnSetMembers[50]" "Ultimate_Walker_RigRN.placeHolderList[124]" 
+		"Ultimate_Walker_RigRN.placeHolderList[125]" ""
+		5 0 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Body_Rig_Grp|Ultimate_Walker_Rig:CNT_Grp|Ultimate_Walker_Rig:CTRL_Main_Grp|Ultimate_Walker_Rig:CTRL_Main.translateX" 
+		"Ultimate_Walker_Rig:BallGuy.dnSetMembers[51]" "Ultimate_Walker_RigRN.placeHolderList[126]" 
+		"Ultimate_Walker_RigRN.placeHolderList[127]" ""
+		5 0 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Body_Rig_Grp|Ultimate_Walker_Rig:CNT_Grp|Ultimate_Walker_Rig:CTRL_Main_Grp|Ultimate_Walker_Rig:CTRL_Main.rotateZ" 
+		"Ultimate_Walker_Rig:BallGuy.dnSetMembers[52]" "Ultimate_Walker_RigRN.placeHolderList[128]" 
+		"Ultimate_Walker_RigRN.placeHolderList[129]" ""
+		5 0 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Body_Rig_Grp|Ultimate_Walker_Rig:CNT_Grp|Ultimate_Walker_Rig:CTRL_Main_Grp|Ultimate_Walker_Rig:CTRL_Main.rotateY" 
+		"Ultimate_Walker_Rig:BallGuy.dnSetMembers[53]" "Ultimate_Walker_RigRN.placeHolderList[130]" 
+		"Ultimate_Walker_RigRN.placeHolderList[131]" ""
+		5 0 "Ultimate_Walker_RigRN" "|Ultimate_Walker_Rig:AniM_walker_Main|Ultimate_Walker_Rig:Body_Rig_Grp|Ultimate_Walker_Rig:CNT_Grp|Ultimate_Walker_Rig:CTRL_Main_Grp|Ultimate_Walker_Rig:CTRL_Main.rotateX" 
+		"Ultimate_Walker_Rig:BallGuy.dnSetMembers[54]" "Ultimate_Walker_RigRN.placeHolderList[132]" 
+		"Ultimate_Walker_RigRN.placeHolderList[133]" ""
+		5 3 "Ultimate_Walker_RigRN" "Ultimate_Walker_Rig:BallGuy.animationMapping" 
+		"Ultimate_Walker_RigRN.placeHolderList[134]" ""
 		5 3 "Ultimate_Walker_RigRN" "Ultimate_Walker_Rig:BallGuy.clipIndexMap" 
-		"Ultimate_Walker_RigRN.placeHolderList[88]" "";
+		"Ultimate_Walker_RigRN.placeHolderList[135]" ""
+		5 4 "Ultimate_Walker_RigRN" "Ultimate_Walker_Rig:BallGuy.clipEvaluate_Raw" 
+		"Ultimate_Walker_RigRN.placeHolderList[136]" "";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode animCurveTL -n "CTRL_Main_translateX";
@@ -966,14 +1079,14 @@ createNode script -n "uiConfigurationScriptNode";
 		"// Maya Mel UI Configuration File.\n//\n//  This script is machine generated.  Edit at your own risk.\n//\n//\n\nglobal string $gMainPane;\nif (`paneLayout -exists $gMainPane`) {\n\n\tglobal int $gUseScenePanelConfig;\n\tint    $useSceneConfig = $gUseScenePanelConfig;\n\tint    $nodeEditorPanelVisible = stringArrayContains(\"nodeEditorPanel1\", `getPanel -vis`);\n\tint    $nodeEditorWorkspaceControlOpen = (`workspaceControl -exists nodeEditorPanel1Window` && `workspaceControl -q -visible nodeEditorPanel1Window`);\n\tint    $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tint    $nVisPanes = `paneLayout -q -nvp $gMainPane`;\n\tint    $nPanes = 0;\n\tstring $editorName;\n\tstring $panelName;\n\tstring $itemFilterName;\n\tstring $panelConfig;\n\n\t//\n\t//  get current state of the UI\n\t//\n\tsceneUIReplacement -update $gMainPane;\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Top View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|top\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n"
 		+ "            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 0\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n"
-		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n"
+		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 100\n            -height 30\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n"
 		+ "\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|side\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n"
 		+ "            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 0\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n"
 		+ "            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n"
-		+ "            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n"
+		+ "            -width 100\n            -height 30\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n"
 		+ "            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n"
 		+ "            -maximumNumHardwareLights 0\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n"
-		+ "            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n"
+		+ "            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 100\n            -height 30\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"|persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n"
 		+ "            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n"
 		+ "            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n"
 		+ "            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1622\n            -height 1090\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n"
@@ -988,8 +1101,8 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dope Sheet\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n"
 		+ "                -showUnitlessCurves 0\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 1\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -showUfeItems 1\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n"
 		+ "                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"DopeSheetEd\");\n            dopeSheetEditor -e \n                -displayValues 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -outliner \"dopeSheetPanel1OutlineEd\" \n                -showSummary 1\n                -showScene 0\n                -hierarchyBelow 0\n                -showTicks 0\n                -selectionWindow 0 0 0 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"timeEditorPanel\" (localizedPanelLabel(\"Time Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Time Editor\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"clipEditorPanel\" (localizedPanelLabel(\"Trax Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Trax Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = clipEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayValues 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -frameRange 0 26 \n                -initialized 1\n                -manageSequencer 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"sequenceEditorPanel\" (localizedPanelLabel(\"Camera Sequencer\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels  $panelName;\n\n"
-		+ "\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayValues 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperGraphPanel\" (localizedPanelLabel(\"Hypergraph Hierarchy\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 1\n                -zoom 1\n                -animateTransition 0\n                -showRelationships 1\n                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n"
+		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"clipEditorPanel\" (localizedPanelLabel(\"Trax Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Trax Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = clipEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayValues 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -frameRange -68.712318 94.712318 \n                -initialized 1\n                -manageSequencer 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"sequenceEditorPanel\" (localizedPanelLabel(\"Camera Sequencer\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayValues 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperGraphPanel\" (localizedPanelLabel(\"Hypergraph Hierarchy\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 1\n                -zoom 1\n                -animateTransition 0\n                -showRelationships 1\n                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n"
 		+ "                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n                -showConstraintLabels 0\n                -showUnderworld 0\n                -showInvisible 0\n                -transitionFrames 1\n                -opaqueContainers 0\n                -freeform 0\n                -imagePosition 0 0 \n                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n                -heatMapDisplay 0\n                -updateSelection 1\n                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n                -range 0 0 \n                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperShadePanel\" (localizedPanelLabel(\"Hypershade\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n"
 		+ "\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypershade\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"visorPanel\" (localizedPanelLabel(\"Visor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"nodeEditorPanel\" (localizedPanelLabel(\"Node Editor\")) `;\n\tif ($nodeEditorPanelVisible || $nodeEditorWorkspaceControlOpen) {\n\t\tif (\"\" == $panelName) {\n\t\t\tif ($useSceneConfig) {\n\t\t\t\t$panelName = `scriptedPanel -unParent  -type \"nodeEditorPanel\" -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n"
 		+ "                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -connectedGraphingMode 1\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -showUnitConversions 0\n                -editorMode \"default\" \n"
@@ -1093,49 +1206,22 @@ createNode animCurveTU -n "BallGuy_walker_lf_heel_ik_ctrl_ballTwist";
 	setAttr -s 8 ".kot[0:7]"  5 5 5 5 5 5 5 5;
 createNode clipScheduler -n "Ultimate_Walker_Rig:BallGuyScheduler1";
 	rename -uid "5C03D02A-C04A-BBE4-438A-D1B4C21F8351";
-	setAttr -s 3 ".cl";
-	setAttr -s 3 ".st";
-	setAttr -s 3 ".st";
-	setAttr -s 3 ".ss";
-	setAttr -s 3 ".ss";
-	setAttr -s 3 ".se";
-	setAttr -s 3 ".se";
-	setAttr -s 3 ".sc";
-	setAttr -s 3 ".sc";
-	setAttr -s 3 ".h";
-	setAttr -s 3 ".h";
-	setAttr -s 3 ".w";
-	setAttr -s 3 ".w";
-	setAttr -s 3 ".ws";
-	setAttr -s 3 ".ws";
-	setAttr -s 3 ".cb";
-	setAttr -s 3 ".cb";
-	setAttr -s 3 ".ca";
-	setAttr -s 3 ".ca";
-	setAttr -s 3 ".ea";
-	setAttr -s 3 ".ea";
-	setAttr -s 3 ".tr[0:2]"  1 1 2;
+	setAttr ".tr[3]"  1;
 	setAttr ".nt" 2;
 createNode clipLibrary -n "Ultimate_Walker_Rig:BallGuyClips1";
 	rename -uid "4EBBF622-9840-8D2E-CD54-D2966204C77C";
-	setAttr -s 3 ".cel";
+	setAttr -s 4 ".cel";
 	setAttr -s 10 ".cel[0].cev";
 	setAttr -s 10 ".cel[1].cev";
 	setAttr -s 10 ".cel[2].cev";
-	setAttr -s 3 ".sc";
-	setAttr -s 3 ".cl";
+	setAttr -s 16 ".cel[3].cev";
+	setAttr -s 4 ".sc";
 createNode animClip -n "clip1Source";
 	rename -uid "A71D75C3-AD47-1B42-F5EA-E887E2D00B2D";
 	setAttr ".ihi" 0;
 	setAttr ".ss" 1;
 	setAttr ".se" 22;
 	setAttr ".ci" no;
-createNode animClip -n "clip1";
-	rename -uid "5B6B3408-E149-C3EE-615E-3BA8FC3236C0";
-	setAttr -s 10 ".ac[0:9]" yes yes yes yes yes yes yes yes yes yes;
-	setAttr ".sf" 1;
-	setAttr ".ss" 1;
-	setAttr ".se" 22;
 createNode animCurveTU -n "BallGuy_walker_lf_foot_ctrl_ikFkBlend1";
 	rename -uid "E4327FFD-604F-7033-20D8-5187538A307E";
 	setAttr ".tan" 9;
@@ -1479,12 +1565,6 @@ createNode animClip -n "clip2Source";
 	setAttr ".ss" 23;
 	setAttr ".se" 76;
 	setAttr ".ci" no;
-createNode animClip -n "clip2";
-	rename -uid "67B253D9-B442-AFF0-43B4-97AB86DB8BED";
-	setAttr -s 10 ".ac[0:9]" yes yes yes yes yes yes yes yes yes yes;
-	setAttr ".sf" 23;
-	setAttr ".ss" 23;
-	setAttr ".se" 76;
 createNode animCurveTU -n "BallGuy_walker_lf_foot_ctrl_ikFkBlend2";
 	rename -uid "A15BF6E1-9C44-3F30-A84D-48B43017168B";
 	setAttr ".tan" 9;
@@ -1542,19 +1622,26 @@ createNode animClip -n "clip3Source";
 	setAttr ".ss" 1;
 	setAttr ".se" 20;
 	setAttr ".ci" no;
-createNode animClip -n "clip3";
-	rename -uid "443EAB8A-7746-A306-CAC9-0A99D94B24AD";
-	setAttr -s 10 ".ac[0:9]" yes yes yes yes yes yes yes yes yes yes;
-	setAttr ".sf" 1;
+createNode animClip -n "clip1Source1";
+	rename -uid "F28FE329-B64F-2425-7E73-33917CE1132B";
+	setAttr ".ihi" 0;
 	setAttr ".ss" 1;
-	setAttr ".se" 20;
+	setAttr ".se" 90;
+	setAttr ".ci" no;
+createNode animClip -n "clip1";
+	rename -uid "ABDCE06C-4A45-6AC7-D51B-BFA1B6B0F6D1";
+	setAttr -s 26 ".ac[0:25]" yes yes yes yes yes yes yes yes yes yes 
+		yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes yes;
+	setAttr ".sf" -43;
+	setAttr ".ss" 1;
+	setAttr ".se" 90;
 select -ne :time1;
 	setAttr -av -k on ".cch";
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr ".o" 25;
-	setAttr ".unw" 25;
+	setAttr ".o" 15;
+	setAttr ".unw" 15;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
@@ -1685,72 +1772,63 @@ select -ne :hardwareRenderGlobals;
 	setAttr -k on ".hwql";
 select -ne :characterPartition;
 select -ne :ikSystem;
-connectAttr "walker_lf_heel_ik_ctrl_pvControl.o" "Ultimate_Walker_RigRN.phl[1]";
-connectAttr "walker_lf_heel_ik_ctrl_legTwist.o" "Ultimate_Walker_RigRN.phl[2]";
-connectAttr "walker_lf_heel_ik_ctrl_heelTwist.o" "Ultimate_Walker_RigRN.phl[3]";
-connectAttr "walker_lf_heel_ik_ctrl_ballTwist.o" "Ultimate_Walker_RigRN.phl[4]";
-connectAttr "walker_lf_heel_ik_ctrl_toeTwist.o" "Ultimate_Walker_RigRN.phl[5]";
-connectAttr "walker_lf_heel_ik_ctrl_translateZ.o" "Ultimate_Walker_RigRN.phl[6]"
+connectAttr "Ultimate_Walker_RigRN.phl[1]" "Ultimate_Walker_RigRN.phl[2]";
+connectAttr "Ultimate_Walker_RigRN.phl[3]" "Ultimate_Walker_RigRN.phl[4]";
+connectAttr "Ultimate_Walker_RigRN.phl[5]" "Ultimate_Walker_RigRN.phl[6]";
+connectAttr "Ultimate_Walker_RigRN.phl[7]" "Ultimate_Walker_RigRN.phl[8]";
+connectAttr "Ultimate_Walker_RigRN.phl[9]" "Ultimate_Walker_RigRN.phl[10]";
+connectAttr "walker_lf_heel_ik_ctrl_translateZ.o" "Ultimate_Walker_RigRN.phl[11]"
 		;
-connectAttr "walker_lf_heel_ik_ctrl_translateY.o" "Ultimate_Walker_RigRN.phl[7]"
+connectAttr "walker_lf_heel_ik_ctrl_translateY.o" "Ultimate_Walker_RigRN.phl[12]"
 		;
-connectAttr "walker_lf_heel_ik_ctrl_translateX.o" "Ultimate_Walker_RigRN.phl[8]"
+connectAttr "walker_lf_heel_ik_ctrl_translateX.o" "Ultimate_Walker_RigRN.phl[13]"
 		;
-connectAttr "walker_lf_heel_ik_ctrl_rotateZ.o" "Ultimate_Walker_RigRN.phl[9]";
-connectAttr "walker_lf_heel_ik_ctrl_rotateY.o" "Ultimate_Walker_RigRN.phl[10]";
-connectAttr "walker_lf_heel_ik_ctrl_rotateX.o" "Ultimate_Walker_RigRN.phl[11]";
-connectAttr "walker_lf_heel_ik_ctrl_footRoll.o" "Ultimate_Walker_RigRN.phl[12]";
-connectAttr "walker_lf_heel_ik_ctrl_footBreak.o" "Ultimate_Walker_RigRN.phl[13]"
+connectAttr "walker_lf_heel_ik_ctrl_rotateZ.o" "Ultimate_Walker_RigRN.phl[14]";
+connectAttr "walker_lf_heel_ik_ctrl_rotateY.o" "Ultimate_Walker_RigRN.phl[15]";
+connectAttr "walker_lf_heel_ik_ctrl_rotateX.o" "Ultimate_Walker_RigRN.phl[16]";
+connectAttr "Ultimate_Walker_RigRN.phl[17]" "Ultimate_Walker_RigRN.phl[18]";
+connectAttr "Ultimate_Walker_RigRN.phl[19]" "Ultimate_Walker_RigRN.phl[20]";
+connectAttr "Ultimate_Walker_RigRN.phl[21]" "Ultimate_Walker_RigRN.phl[22]";
+connectAttr "Ultimate_Walker_RigRN.phl[23]" "Ultimate_Walker_RigRN.phl[24]";
+connectAttr "walker_lf_knee_pv_ctrl_translateZ.o" "Ultimate_Walker_RigRN.phl[25]"
 		;
-connectAttr "walker_lf_heel_ik_ctrl_toeRoll.o" "Ultimate_Walker_RigRN.phl[14]";
-connectAttr "walker_lf_foot_ctrl_ikFkBlend.o" "Ultimate_Walker_RigRN.phl[15]";
-connectAttr "walker_lf_knee_pv_ctrl_translateZ.o" "Ultimate_Walker_RigRN.phl[16]"
+connectAttr "walker_lf_knee_pv_ctrl_translateY.o" "Ultimate_Walker_RigRN.phl[26]"
 		;
-connectAttr "walker_lf_knee_pv_ctrl_translateY.o" "Ultimate_Walker_RigRN.phl[17]"
+connectAttr "walker_lf_knee_pv_ctrl_translateX.o" "Ultimate_Walker_RigRN.phl[27]"
 		;
-connectAttr "walker_lf_knee_pv_ctrl_translateX.o" "Ultimate_Walker_RigRN.phl[18]"
+connectAttr "walker_lf_knee_pv_ctrl_lfLegIkCtrl.o" "Ultimate_Walker_RigRN.phl[28]"
 		;
-connectAttr "walker_lf_knee_pv_ctrl_lfLegIkCtrl.o" "Ultimate_Walker_RigRN.phl[19]"
+connectAttr "walker_rt_heel_ik_ctrl_pvControl.o" "Ultimate_Walker_RigRN.phl[29]"
 		;
-connectAttr "walker_rt_heel_ik_ctrl_pvControl.o" "Ultimate_Walker_RigRN.phl[20]"
+connectAttr "walker_rt_heel_ik_ctrl_legTwist.o" "Ultimate_Walker_RigRN.phl[30]";
+connectAttr "walker_rt_heel_ik_ctrl_heelTwist.o" "Ultimate_Walker_RigRN.phl[31]"
 		;
-connectAttr "walker_rt_heel_ik_ctrl_legTwist.o" "Ultimate_Walker_RigRN.phl[21]";
-connectAttr "walker_rt_heel_ik_ctrl_heelTwist.o" "Ultimate_Walker_RigRN.phl[22]"
+connectAttr "walker_rt_heel_ik_ctrl_ballTwist.o" "Ultimate_Walker_RigRN.phl[32]"
 		;
-connectAttr "walker_rt_heel_ik_ctrl_ballTwist.o" "Ultimate_Walker_RigRN.phl[23]"
+connectAttr "walker_rt_heel_ik_ctrl_toeTwist.o" "Ultimate_Walker_RigRN.phl[33]";
+connectAttr "walker_rt_heel_ik_ctrl_translateZ.o" "Ultimate_Walker_RigRN.phl[34]"
 		;
-connectAttr "walker_rt_heel_ik_ctrl_toeTwist.o" "Ultimate_Walker_RigRN.phl[24]";
-connectAttr "walker_rt_heel_ik_ctrl_translateZ.o" "Ultimate_Walker_RigRN.phl[25]"
+connectAttr "walker_rt_heel_ik_ctrl_translateY.o" "Ultimate_Walker_RigRN.phl[35]"
 		;
-connectAttr "walker_rt_heel_ik_ctrl_translateY.o" "Ultimate_Walker_RigRN.phl[26]"
+connectAttr "walker_rt_heel_ik_ctrl_translateX.o" "Ultimate_Walker_RigRN.phl[36]"
 		;
-connectAttr "walker_rt_heel_ik_ctrl_translateX.o" "Ultimate_Walker_RigRN.phl[27]"
+connectAttr "walker_rt_heel_ik_ctrl_rotateZ.o" "Ultimate_Walker_RigRN.phl[37]";
+connectAttr "walker_rt_heel_ik_ctrl_rotateY.o" "Ultimate_Walker_RigRN.phl[38]";
+connectAttr "walker_rt_heel_ik_ctrl_rotateX.o" "Ultimate_Walker_RigRN.phl[39]";
+connectAttr "walker_rt_heel_ik_ctrl_footRoll.o" "Ultimate_Walker_RigRN.phl[40]";
+connectAttr "walker_rt_heel_ik_ctrl_footBreak.o" "Ultimate_Walker_RigRN.phl[41]"
 		;
-connectAttr "walker_rt_heel_ik_ctrl_rotateZ.o" "Ultimate_Walker_RigRN.phl[28]";
-connectAttr "walker_rt_heel_ik_ctrl_rotateY.o" "Ultimate_Walker_RigRN.phl[29]";
-connectAttr "walker_rt_heel_ik_ctrl_rotateX.o" "Ultimate_Walker_RigRN.phl[30]";
-connectAttr "walker_rt_heel_ik_ctrl_footRoll.o" "Ultimate_Walker_RigRN.phl[31]";
-connectAttr "walker_rt_heel_ik_ctrl_footBreak.o" "Ultimate_Walker_RigRN.phl[32]"
+connectAttr "walker_rt_heel_ik_ctrl_toeRoll.o" "Ultimate_Walker_RigRN.phl[42]";
+connectAttr "Ultimate_Walker_RigRN.phl[43]" "Ultimate_Walker_RigRN.phl[44]";
+connectAttr "walker_rt_knee_pv_ctrl_translateZ.o" "Ultimate_Walker_RigRN.phl[45]"
 		;
-connectAttr "walker_rt_heel_ik_ctrl_toeRoll.o" "Ultimate_Walker_RigRN.phl[33]";
-connectAttr "walker_rt_foot_ctrl_ikFkBlend.o" "Ultimate_Walker_RigRN.phl[34]";
-connectAttr "walker_rt_knee_pv_ctrl_translateZ.o" "Ultimate_Walker_RigRN.phl[35]"
+connectAttr "walker_rt_knee_pv_ctrl_translateY.o" "Ultimate_Walker_RigRN.phl[46]"
 		;
-connectAttr "walker_rt_knee_pv_ctrl_translateY.o" "Ultimate_Walker_RigRN.phl[36]"
+connectAttr "walker_rt_knee_pv_ctrl_translateX.o" "Ultimate_Walker_RigRN.phl[47]"
 		;
-connectAttr "walker_rt_knee_pv_ctrl_translateX.o" "Ultimate_Walker_RigRN.phl[37]"
+connectAttr "walker_rt_knee_pv_ctrl_rtLegIkCtrl.o" "Ultimate_Walker_RigRN.phl[48]"
 		;
-connectAttr "walker_rt_knee_pv_ctrl_rtLegIkCtrl.o" "Ultimate_Walker_RigRN.phl[38]"
-		;
-connectAttr "CTRL_Top_translateY.o" "Ultimate_Walker_RigRN.phl[39]";
-connectAttr "CTRL_Main_translateZ.o" "Ultimate_Walker_RigRN.phl[40]";
-connectAttr "CTRL_Main_translateY.o" "Ultimate_Walker_RigRN.phl[41]";
-connectAttr "CTRL_Main_translateX.o" "Ultimate_Walker_RigRN.phl[42]";
-connectAttr "CTRL_Main_rotateZ.o" "Ultimate_Walker_RigRN.phl[43]";
-connectAttr "CTRL_Main_rotateY.o" "Ultimate_Walker_RigRN.phl[44]";
-connectAttr "CTRL_Main_rotateX.o" "Ultimate_Walker_RigRN.phl[45]";
-connectAttr "Ultimate_Walker_RigRN.phl[46]" "Ultimate_Walker_RigRN.phl[47]";
-connectAttr "Ultimate_Walker_RigRN.phl[48]" "Ultimate_Walker_RigRN.phl[49]";
+connectAttr "CTRL_Top_translateY.o" "Ultimate_Walker_RigRN.phl[49]";
 connectAttr "Ultimate_Walker_RigRN.phl[50]" "Ultimate_Walker_RigRN.phl[51]";
 connectAttr "Ultimate_Walker_RigRN.phl[52]" "Ultimate_Walker_RigRN.phl[53]";
 connectAttr "Ultimate_Walker_RigRN.phl[54]" "Ultimate_Walker_RigRN.phl[55]";
@@ -1769,11 +1847,35 @@ connectAttr "Ultimate_Walker_RigRN.phl[78]" "Ultimate_Walker_RigRN.phl[79]";
 connectAttr "Ultimate_Walker_RigRN.phl[80]" "Ultimate_Walker_RigRN.phl[81]";
 connectAttr "Ultimate_Walker_RigRN.phl[82]" "Ultimate_Walker_RigRN.phl[83]";
 connectAttr "Ultimate_Walker_RigRN.phl[84]" "Ultimate_Walker_RigRN.phl[85]";
-connectAttr "Ultimate_Walker_RigRN.phl[86]" "Ultimate_Walker_Rig:BallGuyClips1.cd[0].cm"
+connectAttr "Ultimate_Walker_RigRN.phl[86]" "Ultimate_Walker_RigRN.phl[87]";
+connectAttr "Ultimate_Walker_RigRN.phl[88]" "Ultimate_Walker_RigRN.phl[89]";
+connectAttr "Ultimate_Walker_RigRN.phl[90]" "Ultimate_Walker_RigRN.phl[91]";
+connectAttr "Ultimate_Walker_RigRN.phl[92]" "Ultimate_Walker_RigRN.phl[93]";
+connectAttr "Ultimate_Walker_RigRN.phl[94]" "Ultimate_Walker_RigRN.phl[95]";
+connectAttr "Ultimate_Walker_RigRN.phl[96]" "Ultimate_Walker_RigRN.phl[97]";
+connectAttr "Ultimate_Walker_RigRN.phl[98]" "Ultimate_Walker_RigRN.phl[99]";
+connectAttr "Ultimate_Walker_RigRN.phl[100]" "Ultimate_Walker_RigRN.phl[101]";
+connectAttr "Ultimate_Walker_RigRN.phl[102]" "Ultimate_Walker_RigRN.phl[103]";
+connectAttr "Ultimate_Walker_RigRN.phl[104]" "Ultimate_Walker_RigRN.phl[105]";
+connectAttr "Ultimate_Walker_RigRN.phl[106]" "Ultimate_Walker_RigRN.phl[107]";
+connectAttr "Ultimate_Walker_RigRN.phl[108]" "Ultimate_Walker_RigRN.phl[109]";
+connectAttr "Ultimate_Walker_RigRN.phl[110]" "Ultimate_Walker_RigRN.phl[111]";
+connectAttr "Ultimate_Walker_RigRN.phl[112]" "Ultimate_Walker_RigRN.phl[113]";
+connectAttr "Ultimate_Walker_RigRN.phl[114]" "Ultimate_Walker_RigRN.phl[115]";
+connectAttr "Ultimate_Walker_RigRN.phl[116]" "Ultimate_Walker_RigRN.phl[117]";
+connectAttr "Ultimate_Walker_RigRN.phl[118]" "Ultimate_Walker_RigRN.phl[119]";
+connectAttr "Ultimate_Walker_RigRN.phl[120]" "Ultimate_Walker_RigRN.phl[121]";
+connectAttr "Ultimate_Walker_RigRN.phl[122]" "Ultimate_Walker_RigRN.phl[123]";
+connectAttr "Ultimate_Walker_RigRN.phl[124]" "Ultimate_Walker_RigRN.phl[125]";
+connectAttr "Ultimate_Walker_RigRN.phl[126]" "Ultimate_Walker_RigRN.phl[127]";
+connectAttr "Ultimate_Walker_RigRN.phl[128]" "Ultimate_Walker_RigRN.phl[129]";
+connectAttr "Ultimate_Walker_RigRN.phl[130]" "Ultimate_Walker_RigRN.phl[131]";
+connectAttr "Ultimate_Walker_RigRN.phl[132]" "Ultimate_Walker_RigRN.phl[133]";
+connectAttr "Ultimate_Walker_RigRN.phl[134]" "Ultimate_Walker_Rig:BallGuyClips1.cd[0].cm"
 		;
-connectAttr "Ultimate_Walker_Rig:BallGuyScheduler1.ce" "Ultimate_Walker_RigRN.phl[87]"
+connectAttr "Ultimate_Walker_RigRN.phl[135]" "Ultimate_Walker_Rig:BallGuyClips1.cd[0].cim"
 		;
-connectAttr "Ultimate_Walker_RigRN.phl[88]" "Ultimate_Walker_Rig:BallGuyClips1.cd[0].cim"
+connectAttr "Ultimate_Walker_Rig:BallGuyScheduler1.ce" "Ultimate_Walker_RigRN.phl[136]"
 		;
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
@@ -1787,42 +1889,18 @@ connectAttr ":defaultArnoldFilter.msg" ":defaultArnoldRenderOptions.filt";
 connectAttr ":defaultArnoldDriver.msg" ":defaultArnoldRenderOptions.drvr";
 connectAttr "Ultimate_Walker_Rig:BallGuyClips1.cf" "Ultimate_Walker_Rig:BallGuyScheduler1.cfr"
 		;
-connectAttr "Ultimate_Walker_Rig:BallGuyClips1.cl[0]" "Ultimate_Walker_Rig:BallGuyScheduler1.cl[0]"
+connectAttr "Ultimate_Walker_Rig:BallGuyClips1.cl[3]" "Ultimate_Walker_Rig:BallGuyScheduler1.cl[3]"
 		;
-connectAttr "Ultimate_Walker_Rig:BallGuyClips1.cl[1]" "Ultimate_Walker_Rig:BallGuyScheduler1.cl[1]"
-		;
-connectAttr "Ultimate_Walker_Rig:BallGuyClips1.cl[2]" "Ultimate_Walker_Rig:BallGuyScheduler1.cl[2]"
-		;
-connectAttr "clip1.sf" "Ultimate_Walker_Rig:BallGuyScheduler1.st[0]";
-connectAttr "clip2.sf" "Ultimate_Walker_Rig:BallGuyScheduler1.st[1]";
-connectAttr "clip3.sf" "Ultimate_Walker_Rig:BallGuyScheduler1.st[2]";
-connectAttr "clip1.ss" "Ultimate_Walker_Rig:BallGuyScheduler1.ss[0]";
-connectAttr "clip2.ss" "Ultimate_Walker_Rig:BallGuyScheduler1.ss[1]";
-connectAttr "clip3.ss" "Ultimate_Walker_Rig:BallGuyScheduler1.ss[2]";
-connectAttr "clip1.se" "Ultimate_Walker_Rig:BallGuyScheduler1.se[0]";
-connectAttr "clip2.se" "Ultimate_Walker_Rig:BallGuyScheduler1.se[1]";
-connectAttr "clip3.se" "Ultimate_Walker_Rig:BallGuyScheduler1.se[2]";
-connectAttr "clip1.w" "Ultimate_Walker_Rig:BallGuyScheduler1.w[0]";
-connectAttr "clip2.w" "Ultimate_Walker_Rig:BallGuyScheduler1.w[1]";
-connectAttr "clip3.w" "Ultimate_Walker_Rig:BallGuyScheduler1.w[2]";
-connectAttr "clip1.ws" "Ultimate_Walker_Rig:BallGuyScheduler1.ws[0]";
-connectAttr "clip2.ws" "Ultimate_Walker_Rig:BallGuyScheduler1.ws[1]";
-connectAttr "clip3.ws" "Ultimate_Walker_Rig:BallGuyScheduler1.ws[2]";
-connectAttr "clip1.ea" "Ultimate_Walker_Rig:BallGuyScheduler1.ea[0]";
-connectAttr "clip2.ea" "Ultimate_Walker_Rig:BallGuyScheduler1.ea[1]";
-connectAttr "clip3.ea" "Ultimate_Walker_Rig:BallGuyScheduler1.ea[2]";
-connectAttr "clip1.cb" "Ultimate_Walker_Rig:BallGuyScheduler1.cb[0]";
-connectAttr "clip2.cb" "Ultimate_Walker_Rig:BallGuyScheduler1.cb[1]";
-connectAttr "clip3.cb" "Ultimate_Walker_Rig:BallGuyScheduler1.cb[2]";
-connectAttr "clip1.ca" "Ultimate_Walker_Rig:BallGuyScheduler1.ca[0]";
-connectAttr "clip2.ca" "Ultimate_Walker_Rig:BallGuyScheduler1.ca[1]";
-connectAttr "clip3.ca" "Ultimate_Walker_Rig:BallGuyScheduler1.ca[2]";
-connectAttr "clip1.sc" "Ultimate_Walker_Rig:BallGuyScheduler1.sc[0]";
-connectAttr "clip2.sc" "Ultimate_Walker_Rig:BallGuyScheduler1.sc[1]";
-connectAttr "clip3.sc" "Ultimate_Walker_Rig:BallGuyScheduler1.sc[2]";
-connectAttr "clip1.h" "Ultimate_Walker_Rig:BallGuyScheduler1.h[0]";
-connectAttr "clip2.h" "Ultimate_Walker_Rig:BallGuyScheduler1.h[1]";
-connectAttr "clip3.h" "Ultimate_Walker_Rig:BallGuyScheduler1.h[2]";
+connectAttr "clip1.sf" "Ultimate_Walker_Rig:BallGuyScheduler1.st[3]";
+connectAttr "clip1.ss" "Ultimate_Walker_Rig:BallGuyScheduler1.ss[3]";
+connectAttr "clip1.se" "Ultimate_Walker_Rig:BallGuyScheduler1.se[3]";
+connectAttr "clip1.w" "Ultimate_Walker_Rig:BallGuyScheduler1.w[3]";
+connectAttr "clip1.ws" "Ultimate_Walker_Rig:BallGuyScheduler1.ws[3]";
+connectAttr "clip1.ea" "Ultimate_Walker_Rig:BallGuyScheduler1.ea[3]";
+connectAttr "clip1.cb" "Ultimate_Walker_Rig:BallGuyScheduler1.cb[3]";
+connectAttr "clip1.ca" "Ultimate_Walker_Rig:BallGuyScheduler1.ca[3]";
+connectAttr "clip1.sc" "Ultimate_Walker_Rig:BallGuyScheduler1.sc[3]";
+connectAttr "clip1.h" "Ultimate_Walker_Rig:BallGuyScheduler1.h[3]";
 connectAttr "BallGuy_walker_lf_foot_ctrl_ikFkBlend.a" "Ultimate_Walker_Rig:BallGuyClips1.cel[0].cev[0].cevr"
 		;
 connectAttr "BallGuy_walker_rt_foot_ctrl_ikFkBlend.a" "Ultimate_Walker_Rig:BallGuyClips1.cel[0].cev[1].cevr"
@@ -1883,12 +1961,43 @@ connectAttr "BallGuy_walker_lf_heel_ik_ctrl_translateX2.a" "Ultimate_Walker_Rig:
 		;
 connectAttr "BallGuy_walker_lf_heel_ik_ctrl_ballTwist2.a" "Ultimate_Walker_Rig:BallGuyClips1.cel[2].cev[9].cevr"
 		;
+connectAttr "walker_lf_heel_ik_ctrl_pvControl.a" "Ultimate_Walker_Rig:BallGuyClips1.cel[3].cev[10].cevr"
+		;
+connectAttr "walker_lf_heel_ik_ctrl_legTwist.a" "Ultimate_Walker_Rig:BallGuyClips1.cel[3].cev[11].cevr"
+		;
+connectAttr "walker_lf_heel_ik_ctrl_heelTwist.a" "Ultimate_Walker_Rig:BallGuyClips1.cel[3].cev[12].cevr"
+		;
+connectAttr "walker_lf_heel_ik_ctrl_ballTwist.a" "Ultimate_Walker_Rig:BallGuyClips1.cel[3].cev[13].cevr"
+		;
+connectAttr "walker_lf_heel_ik_ctrl_toeTwist.a" "Ultimate_Walker_Rig:BallGuyClips1.cel[3].cev[14].cevr"
+		;
+connectAttr "walker_lf_heel_ik_ctrl_footRoll.a" "Ultimate_Walker_Rig:BallGuyClips1.cel[3].cev[15].cevr"
+		;
+connectAttr "walker_lf_heel_ik_ctrl_footBreak.a" "Ultimate_Walker_Rig:BallGuyClips1.cel[3].cev[16].cevr"
+		;
+connectAttr "walker_lf_heel_ik_ctrl_toeRoll.a" "Ultimate_Walker_Rig:BallGuyClips1.cel[3].cev[17].cevr"
+		;
+connectAttr "walker_rt_foot_ctrl_ikFkBlend.a" "Ultimate_Walker_Rig:BallGuyClips1.cel[3].cev[18].cevr"
+		;
+connectAttr "walker_lf_foot_ctrl_ikFkBlend.a" "Ultimate_Walker_Rig:BallGuyClips1.cel[3].cev[19].cevr"
+		;
+connectAttr "CTRL_Main_translateZ.a" "Ultimate_Walker_Rig:BallGuyClips1.cel[3].cev[20].cevr"
+		;
+connectAttr "CTRL_Main_translateY.a" "Ultimate_Walker_Rig:BallGuyClips1.cel[3].cev[21].cevr"
+		;
+connectAttr "CTRL_Main_translateX.a" "Ultimate_Walker_Rig:BallGuyClips1.cel[3].cev[22].cevr"
+		;
+connectAttr "CTRL_Main_rotateZ.a" "Ultimate_Walker_Rig:BallGuyClips1.cel[3].cev[23].cevr"
+		;
+connectAttr "CTRL_Main_rotateY.a" "Ultimate_Walker_Rig:BallGuyClips1.cel[3].cev[24].cevr"
+		;
+connectAttr "CTRL_Main_rotateX.a" "Ultimate_Walker_Rig:BallGuyClips1.cel[3].cev[25].cevr"
+		;
 connectAttr "clip1Source.cl" "Ultimate_Walker_Rig:BallGuyClips1.sc[0]";
 connectAttr "clip2Source.cl" "Ultimate_Walker_Rig:BallGuyClips1.sc[1]";
 connectAttr "clip3Source.cl" "Ultimate_Walker_Rig:BallGuyClips1.sc[2]";
-connectAttr "clip1Source.cl" "clip1.cl";
-connectAttr "clip2Source.cl" "clip2.cl";
-connectAttr "clip3Source.cl" "clip3.cl";
+connectAttr "clip1Source1.cl" "Ultimate_Walker_Rig:BallGuyClips1.sc[3]";
+connectAttr "clip1Source1.cl" "clip1.cl";
 connectAttr "trackInfoManager1.msg" ":sequenceManager1.tim";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 // End of walk_anim.ma
