@@ -27,7 +27,7 @@ ScriptedImporter:
     streamingMipmaps: 1
     streamingMipmapsPriority: 0
     vTOnly: 0
-    ignoreMasterTextureLimit: 0
+    ignoreMipmapLimit: 0
     nPOTScale: 1
     sRGBTexture: 1
     spriteMode: 2
@@ -91,6 +91,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
   - name: f_arm
@@ -623,7 +624,8 @@ ScriptedImporter:
     - {x: 39, y: 40}
     - {x: 41, y: 42}
     tessellationDetail: 0
-    uvTransform: {x: 25, y: 52}
+    uvTransform: {x: 118, y: 153}
+    spritePosition: {x: 93, y: 101}
   - name: backpack
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1122,7 +1124,8 @@ ScriptedImporter:
     - {x: 38, y: 39}
     - {x: 39, y: 40}
     tessellationDetail: 0
-    uvTransform: {x: -53, y: 224}
+    uvTransform: {x: 4, y: 377}
+    spritePosition: {x: 57, y: 153}
   - name: torsoHead
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -2020,7 +2023,8 @@ ScriptedImporter:
     - {x: 64, y: 72}
     - {x: 65, y: 71}
     tessellationDetail: 0
-    uvTransform: {x: -47, y: -149}
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 51, y: 153}
   - name: eyeball
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -2324,7 +2328,8 @@ ScriptedImporter:
     - {x: 22, y: 23}
     - {x: 23, y: 24}
     tessellationDetail: 0
-    uvTransform: {x: 8, y: 159}
+    uvTransform: {x: 118, y: 427}
+    spritePosition: {x: 110, y: 268}
   - name: strap
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -2521,7 +2526,8 @@ ScriptedImporter:
     - {x: 10, y: 13}
     - {x: 11, y: 12}
     tessellationDetail: 0
-    uvTransform: {x: 21, y: 312}
+    uvTransform: {x: 118, y: 471}
+    spritePosition: {x: 97, y: 159}
   - name: f_leg
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -3031,7 +3037,8 @@ ScriptedImporter:
     - {x: 36, y: 37}
     - {x: 38, y: 39}
     tessellationDetail: 0
-    uvTransform: {x: -78, y: 195}
+    uvTransform: {x: 4, y: 224}
+    spritePosition: {x: 82, y: 29}
   - name: b_leg
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -3541,7 +3548,8 @@ ScriptedImporter:
     - {x: 36, y: 37}
     - {x: 38, y: 39}
     tessellationDetail: 0
-    uvTransform: {x: 32, y: -29}
+    uvTransform: {x: 118, y: 4}
+    spritePosition: {x: 86, y: 33}
   - name: b_arm
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -4072,7 +4080,8 @@ ScriptedImporter:
     - {x: 39, y: 40}
     - {x: 41, y: 42}
     tessellationDetail: 0
-    uvTransform: {x: 18, y: 185}
+    uvTransform: {x: 118, y: 293}
+    spritePosition: {x: 100, y: 108}
   characterData:
     bones:
     - name: f_shoulder
@@ -4397,6 +4406,7 @@ ScriptedImporter:
   keepDupilcateSpriteName: 1
   skeletonAssetReferenceID: 
   padding: 4
+  spriteSizeExpand: 0
   spriteCategoryList:
     categories: []
   spritePackingTag: 
@@ -4496,6 +4506,8 @@ ScriptedImporter:
   sharedRigPSDLayers: []
   pSDLayerImportSetting: []
   importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  spriteSizeExpandChanged: 0
   generateGOHierarchy: 0
   textureAssetName: 
   prefabAssetName: 
